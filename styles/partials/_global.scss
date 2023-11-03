@@ -1,0 +1,134 @@
+
+@use "./typography";
+@use './variables' as *;
+@use './mixins' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family:$primary-font;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  font-weight:400;
+}
+
+h1 {
+  font-family: $primary-font;
+  font-size:3.75rem;
+  line-height: 4.25rem;
+ font-weight: 900;
+ color: #fff;
+}
+
+h2 {  
+  font-family: $primary-font;
+  font-size:2.25rem;
+  line-height: 2.75rem;
+ font-weight: 700;
+
+}
+h3 {
+  font-family: $primary-font;
+  font-size:1.5rem;
+  line-height: 2rem;
+ font-weight: 600;
+
+} 
+
+// Subheader
+
+// Body Copy
+// Text size: 14px | Line height: 22px | Text weight: Regular 400
+// Footer Copy
+// Text size: 14px | Line height: 20px | Text weight: Regular 400
+// LABELS & BUTTONS
+// Text size: 12px | Line height: 20px | Text weight: Bold 700
+// MOBILE TEXT STYLES
+// Page Header
+// Text size: 24px | Line height: 32px | Text weight: Bold 700
+// Section Header
+// Text size: 24px | Line height: 32px | Text weight: Bold 700
+// Subheader
+// Text size: 14px | Line height: 22px | Text weight: Demi 600
+// Body Copy
+// Text size: 13px | Line height: 18px | Text weight: Regular 400
+// Footer Copy
+// Text size: 13px | Line height: 18px | Text weight: Regular 400
+// LABELS & BUTTONS
+// Text size: 10px | Line height: 20px | Text weight: Bold 700
+
+
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: $primary1; 
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0.25rem 2rem;
+  align-items: center;
+
+      &__site-title {
+          color: $primary3;
+          text-decoration: none;  
+          font-size: 1.5rem;
+      }
+
+      &__list {
+          color:$primary3;
+          display: flex;
+          list-style-type: none;
+          text-decoration: none;
+          gap: 1rem;
+          align-items: center;
+          font-weight: 300;   
+      }
+
+      &__list a {
+          color:$primary3; 
+          text-decoration: none; 
+      }
+
+      &__link--active {
+        border-bottom: .187rem solid $primary3;
+          padding: 0 0 44% 0;
+      }
+
+}
+
+// Footer Section
+.footer-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; 
+    padding: 0; 
+    margin: 0; 
+    background-color: $primary1;
+  
+    }
+
+    .copyright-section {
+      background-color: #323232;
+      padding: .5% 0 .5% 0;
+  }
+
+
