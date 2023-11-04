@@ -37,7 +37,7 @@
 @media screen and (min-width: 1024px) {
   .gallery__item {
     width: 30%;
-    margin: 1.25vw 0;
+    max-width: 1200px;
   }
 }
 
@@ -90,35 +90,33 @@
 }
 
 html,
-body {
+body, p {
   margin: 0;
   padding: 0;
-  font-family: "AvenirNext LT Pro";
+  font-family: "Avenir Next", sans-serif;
   font-size: 0.875rem;
   line-height: 1.375rem;
   font-weight: 400;
 }
 
 h1 {
-  font-family: "AvenirNext LT Pro";
+  font-family: "Avenir Next", sans-serif;
   font-size: 3.75rem;
   line-height: 4.25rem;
-  font-weight: 900;
+  font-weight: 700;
   color: #fff;
 }
 
 h2 {
-  font-family: "AvenirNext LT Pro";
+  font-family: "Avenir Next", sans-serif;
   font-size: 2.25rem;
   line-height: 2.75rem;
-  font-weight: 700;
 }
 
 h3 {
-  font-family: "AvenirNext LT Pro";
+  font-family: "Avenir Next", sans-serif;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-weight: 600;
 }
 
 .header {
@@ -136,10 +134,24 @@ h3 {
 
 .nav {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
   padding: 0.25rem 2rem;
   align-items: center;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0.25rem 2rem;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .nav__site-title {
   color: #FFFFFF;
@@ -147,7 +159,6 @@ h3 {
   font-size: 1.5rem;
 }
 .nav__list {
-  color: #FFFFFF;
   display: flex;
   list-style-type: none;
   text-decoration: none;
@@ -155,28 +166,44 @@ h3 {
   align-items: center;
   font-weight: 300;
 }
-.nav__list a {
-  color: #FFFFFF;
+.nav__list {
+  text-decoration: none;
+  font-size: 0.86rem;
+  color: #AFAFAF;
+}
+.nav__link {
   text-decoration: none;
 }
 .nav__link--active {
   border-bottom: 0.187rem solid #FFFFFF;
   padding: 0 0 44% 0;
+  color: #FFFFFF;
+}
+.nav__link--inactive {
+  color: #AFAFAF;
 }
 
 .footer-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
   padding: 0;
   margin: 0;
   background-color: #323232;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .footer-section {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .copyright-section {
   background-color: #323232;
   padding: 0.5% 0 0.5% 0;
+  color: #fff;
 }
 
 .hero {
@@ -188,6 +215,7 @@ h3 {
   min-height: 37.5rem;
   display: flex;
   align-items: center;
+  padding: 0 0 0 10%;
 }
 .hero::before {
   content: "";
@@ -197,28 +225,52 @@ h3 {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  z-index: 0;
 }
 .hero__title {
-  z-index: 1;
+  z-index: 0;
 }
 
-.intro-section {
-  width: 80%;
-  margin: 0 auto;
+.intro__title {
+  margin: 3% 0 3% 10%;
 }
-
 .intro__image {
   display: flex;
   justify-content: center;
 }
 .intro__image img {
   width: 70%;
+  height: 31.25rem;
 }
 
-.para-flex {
+.intro-inner {
+  margin: 2% 0 0 15%;
+}
+.intro-inner__para--bold {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+  width: 56%;
+}
+.intro-inner__para--margin {
+  font-size: 1rem;
+}
+
+.content__flex {
   display: flex;
   flex-direction: row;
   margin: 0 20px;
   justify-content: space-between;
+  width: 71%;
+  margin: 0 auto;
+}
+.content__title {
+  margin: 3% 0 1% 14.5%;
+}
+.content__para {
+  padding: 0 5% 0 0px;
+}
+
+.main__title {
+  margin: 3% 0 1% 14.5%;
 }/*# sourceMappingURL=bio.css.map */

@@ -1,14 +1,23 @@
+$mobile-breakpoint:320px;
 $tablet-breakpoint: 768px;
 $desktop-breakpoint: 1024px;
 
+// BandSite-Black
 $primary1:#323232 ;
+// Silver
 $primary2: #AFAFAF;
+// White
 $primary3:#FFFFFF ;
+// BandSite-DarkBlack
 $second1:#000000 ;
+// Mercury
 $second2:#E1E1E1 ;
+// Alabaster
 $second3:#FAFAFA ;
 
-$primary-font: "AvenirNext LT Pro";
+$primary-font: 'Avenir Next', sans-serif;
+$demi-font: 'Avenir Next Demi', sans-serif;
+$bold-font: 'Avenir Next Bold', sans-serif;
 
 
 

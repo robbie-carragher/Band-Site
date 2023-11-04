@@ -10,6 +10,7 @@
       flex-wrap: wrap;
       justify-content: space-evenly;
       align-content: space-evenly;
+    
     }
 
 img {
@@ -46,7 +47,8 @@ img {
 
     @include desktop {
       width: calc(90% / 3);
-      margin: 1.25vw 0;
+      // margin: 1.25vw 0;
+      max-width: 1200px;
     }
   }
 }

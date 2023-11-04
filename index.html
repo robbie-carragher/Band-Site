@@ -14,10 +14,10 @@
   <header class="header">
     <div class="wrapper">
         <nav class="nav">
-            <a class="nav__site-title" href="/">BANDSITE</a>
+            <a class="nav__site-title" href="/"><img src="./assets/Logo/Logo-bandsite.svg" alt=""></a>
             <ul class="nav__list">
                 <li class="nav__item"><a href="" class="nav__link nav__link--active">Biography</a></li>
-                <li class="nav__item"><a href="" class="">Shows</a></li>
+                <li class="nav__item "><a href="" class="nav__link nav__link--inactive">Shows</a></li>
 
             </ul>
         </nav>
@@ -33,20 +33,22 @@
 <!-- Intro Section  -->
 
 <main>
-  <section >
+  <section class="intro">
     <h2 class="intro__title">About the musicians</h2>
    <div class="intro__image"> 
     <img src="./assets/Images/band.jpg" alt="Band">
   </div>
-    <p class="intro__para">
-      “We push each other to be the best. It’s not uncommon for one of us
-       to say ‘this needs to be better, back to the drawing board’”</p>
-    <p>- Bryan Teddy, lead vocalist of The Bees Knees</p>
+      <div class="intro-inner">
+        <p class="intro-inner__para intro-inner__para--bold">
+          “We push each other to be the best. It’s not uncommon for one of us
+          to say ‘this needs to be better, back to the drawing board’”</p>
+        <p class="intro-inner__para intro-inner__para--margin">- Bryan Teddy, lead vocalist of The Bees Knees</p>
+      </div>
   </section>
   
-  <section>
-  <h3 class="main__title">The Bees Knees</h3>
-  <div class="content-section">
+  <section class="content">
+  <h3 class="content__title">The Bees Knees</h3>
+  <div class="content__flex">
       <p class="content__para">
         The Bees Knees is a pop rock band originating from San Francisco, California. The band consists 
         of lead vocalist Bryan Teddy, guitarist Mack Tolkens, guitarist Andrew Green, bassist Kent Zulkee and 
@@ -64,52 +66,67 @@
   </div>
   </section>
   
+  <!-- Photo Gallery Section -->
   
     <h3 class="main__title">Photo Gallery</h3>
-    <section class="gallery">
-      <div class="gallery__item"><img src="./assets/Images/Photo-gallery-1.jpg" alt="img1"></div>
-      <div class="gallery__item"><img src="./assets/Images/Photo-gallery-2.jpg" alt="img2"></div>
-      <div class="gallery__item"><img src="./assets/Images/Photo-gallery-3.jpg" alt="img3"></div>
-      <div class="gallery__item"><img src="./assets/Images/Photo-gallery-4.jpg" alt="img4"></div>
-      <div class="gallery__item"><img src="./assets/Images/Photo-gallery-5.jpg" alt="img5"></div>
-      <div class="gallery__item"><img src="./assets/Images/Photo-gallery-6.jpg" alt="img6"></div>
-      <div class="gallery__item"><img src="./assets/Images/Photo-gallery-7.jpg" alt="img7"></div>
-      <div class="gallery__item"><img src="./assets/Images/Photo-gallery-8.jpg" alt="img8"></div>
+  <section class="gallery">
+
+      <div class="gallery__item"><img src="./assets/Images/Photo-gallery-1.jpg" alt="img1" class="grayscale"></div>
+      <div class="gallery__item"><img src="./assets/Images/Photo-gallery-2.jpg" alt="img2"  class="grayscale"></div>
+      <div class="gallery__item"><img src="./assets/Images/Photo-gallery-3.jpg" alt="img3"  class="grayscale"></div>
+      <div class="gallery__item"><img src="./assets/Images/Photo-gallery-4.jpg" alt="img4"  class="grayscale"></div>
+      <div class="gallery__item"><img src="./assets/Images/Photo-gallery-5.jpg" alt="img5"  class="grayscale"></div>
+      <div class="gallery__item"><img src="./assets/Images/Photo-gallery-6.jpg" alt="img6"  class="grayscale"></div>
+      <div class="gallery__item"><img src="./assets/Images/Photo-gallery-7.jpg" alt="img7"  class="grayscale"></div>
+      <div class="gallery__item"><img src="./assets/Images/Photo-gallery-8.jpg" alt="img8"  class="grayscale"></div>
       <div class="gallery__item gallery__item--important"><img src="./assets/Images/Photo-gallery-9.jpg" alt="img9"></div>
      
 </main>
 
-<!-- Footer Section -->
-  <!-- Footer Section -->
-  <footer class="footer-section">
+  <!-- Footer Section Desktop view-->
 
-    <section class="footer__list">
-        <h3 class="footer__title">Address</h3>
-        <p class="footer__info">503 Broadway Penthouse</p>
-        <p class="footer__info">New York</p>     
-        <p class="footer__info">New York</p>    
-    </section>
-    <section class="footer__list">
-      <a href="https://www.instagram.com/"><img src="./assets/Icons/SVG/Icon-instagram.svg" alt="Instagram"></a>
-      <a href="https://www.facebook.com/"> <img src="./assets/Icons/SVG/Icon-facebook.svg" alt="Facebook" ></a>
-      <a href="https://twitter.com/"> <img src="./assets/Icons/SVG/Icon-twitter.svg" alt="Twitter"></a>
-      <p class="footer__info">503 Broadway Penthouse</p>
-      <p class="footer__info">New York</p>     
-      <p class="footer__info">New York</p>  
-  </section>
-    <section class="footer__list list-modify">
-        <h3  class="footer__title">Hours</h3>
-        <p class="footer__info"><strong>Mon - Friday:</strong> 9:00am - 7:00pm</p>
-        <p class="footer__info"><strong>Sat - Sun:</strong> 10:00am - 5:00pm</p>
-        <p class="footer__info"><strong>Sat - Sun:</strong> 10:00am - 5:00pm</p>
-    </section>
-    <section class="footer__list">
-       <a href="./index.html" class="site__title-logo"><span>BANDSITE</span></a>
-    </section>
+<footer class="footer-section footer-section--deskView">
+
+      <section class="footer__list ">
+          <h3 class="footer__title">Get in Touch</h3>
+          <p class="footer__info">Cam Adams<br>
+            The Bees Knees Management</p>
+          <p class="footer__info">503 Broadway Penthouse,<br> 
+            New York, NY 10012, USA</p>     
+          <p class="footer__info">
+            <a href="mailto:info@thebeesknees.com" target="blank" rel="noopener"></a> 
+          </p>       
+      </section>
+      <section class="footer__list">
+      <div class="social-icon-wrap">
+        <a href="https://www.instagram.com/"><img src="./assets/Icons/SVG/Icon-instagram.svg" alt="Instagram"></a>
+        <a href="https://www.facebook.com/"> <img src="./assets/Icons/SVG/Icon-facebook.svg" alt="Facebook" ></a>
+        <a href="https://twitter.com/"> <img src="./assets/Icons/SVG/Icon-twitter.svg" alt="Twitter"></a>
+      </div>
+        <p class="footer__info">Pearl Gregg <br>Limitless Artist Group</p>
+        <p class="footer__info">Booking Agent for 
+          <br>USA / South America / Japan </p>     
+          <a href="mailto:pearl.gregg@limitlessag.com" target="blank" rel="noopener">pearl.gregg@limitlessag.com</a> 
+        </p> 
+      </section>
+
+      <section class="footer__list list-modify">
+          <h3  class="footer__title">Hours</h3>
+          <p class="footer__info"><strong>Mon - Friday:</strong> 9:00am - 7:00pm</p>
+          <p class="footer__info"><strong>Sat - Sun:</strong> 10:00am - 5:00pm</p>
+          <p class="footer__info"><strong>Sat - Sun:</strong> 10:00am - 5:00pm</p>
+      </section>
+      <section class="footer__list">
+        <a href="./index.html" class="site__title-logo"><img src="./assets/Logo/Logo-bandsite.svg" alt="BandSite Logo"></a>
+      </section>
   
   </footer>
 
-</footer>
+    <!-- Footer Section Mobile view-->
+
+
+    
+
 <section class="copyright-section">
   <p class="copy__list"><strong>Sat - Sun:</strong> 10:00am - 5:00pm</p>
 </section>
