@@ -20,11 +20,16 @@ body,p{
 }
 
 h1 {
-  font-family:$primary-font;
+  font-family:$bold-font;
   font-size:3.75rem;
   line-height: 4.25rem;
- font-weight: 700;
- color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+      @include tablet {
+            font-size: 3.75rem;
+        }
 }
 
 h2 {  
@@ -32,13 +37,20 @@ h2 {
   font-size:2.25rem;
   line-height: 2.75rem;
  font-weight: 700;
+ font-size: 1.5rem;
+ line-height: 2rem;
+
+      @include tablet {
+          font-size: 2.25rem;
+          line-height: 2.27rem;
+      }  
 
 }
 h3 {
-  font-family: $primary-font;
+  font-family:$demi-font;
   font-size:1.5rem;
   line-height: 2rem;
- font-weight: 600;
+ font-weight: 300;
 
 } 
 
@@ -60,79 +72,11 @@ h3 {
   }
 }
 
-// .nav {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-start;
-//   padding: 0.25rem 2rem;
-//   align-items: center;
-
-//     @include tablet {
-//     display: flex;
-//     flex-direction: row;
-//   }
-
-//       &__site-title {
-//           color: $primary3;
-//           text-decoration: none;  
-//           font-size: 1.5rem;
-//       }
-
-//       &__list {
-//           color:$primary3;
-//           display: flex;
-//           list-style-type: none;
-//           text-decoration: none;
-//           gap: 1rem;
-//           align-items: center;
-//           font-weight: 300;
-//           width: 100%; 
-
-//           @include tablet {
-//             // margin: 0; 
-//           }
-//       }
-
-//       &__link  {
-//           color:$primary3; 
-//           text-decoration: none; 
-//       }
-
-//       &__link--active {
-//         border-bottom: .187rem solid $primary3;
-//           padding: 0 0 44% 0;
-//       }
-
-
-
-
-
-// }
-
-
-// @media (max-width: 767px) {
-//   .nav__list {
-//     margin: 0; 
-   
-//   }
-
-//   .nav__item {
-//     width: 50%; 
-//   }
-
-//   .nav__link {
-//     display: block; 
-//     text-align: center; 
-//     padding: 10px 0; 
-//   }
-// }
-
-
 .nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 0.25rem 2rem;
+  padding: 0.25rem 0;
   align-items: center;
 
   @include tablet {
@@ -158,17 +102,17 @@ h3 {
   }
 
   &__link {
-    color: $primary3; 
+    color: $primary2; 
     text-decoration: none; 
 
-    // Modifier for the active state of the link
     &--active {
       border-bottom: .187rem solid $primary3;
       padding: 0 0 44% 0;
+      color: $primary3; 
+
     }
   }
 
-  // This is the added media query for mobile devices
   @media (max-width: 767px) {
     &__list {
       margin: 0; 
@@ -187,67 +131,184 @@ h3 {
 }
 
 // Footer Section Desktop
-.footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%; 
-    padding: 6% 5% 6% 5%;
-    margin: 0; 
-    background-color: $primary1;
-    color: #fff;
+// .footer {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     width: 100%; 
+//     padding: 6% 5% 6% 5%;
+//     margin: 0; 
+//     background-color: $primary1;
+//     color: #fff;
 
 
-    @include tablet {
-      display: flex;
-      flex-direction: row;
+//     @include tablet {
+//       display: flex;
+//       flex-direction: row;
   
-    }
+//     }
  
-      &__info {
-            margin: 0 0 14% 0;
-          }
+//       &__info {
+//             margin: 0 0 14% 0;
+//           }
 
-        &--move{
-          margin: -3% 0 0 0;
-        }
+//         &--move{
+//           margin: -3% 0 0 0;
+//         }
 
-        &--move1 {
-          margin: 14% 0 14% 0;
-        }
-        &--move2 {
-          margin: 27% 0 14% 0;
-        }
+//         &--move1 {
+//           margin: 14% 0 14% 0;
+//         }
+//         &--move2 {
+//           margin: 27% 0 14% 0;
+//         }
    
-    &__email {
+//     &__email {
 
-            color: #fff;
-            text-decoration: none;
+//             color: #fff;
+//             text-decoration: none;
 
+//     }
+
+//     &__social-icon {
+//           padding: 0 2% 0 0%;
+//           display: inline-block;
+//           margin: 0 9% 3% 0;
+//       }
+
+//     }
+
+//       @media (max-width: 767px) {
+//         .footer--deskView {
+//           display: none;
+//         }
+//         .footer--mobileView {
+//           display: block; 
+//           padding: 0 0 0 3%;
+//         }
+//       }
+
+
+// Test 
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%; 
+  padding: 6% 5% 6% 5%;
+  margin: 0; 
+  background-color: $primary1;
+  color: #fff;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+  }
+ 
+  &__info {
+    margin: 0 0 14% 0;
+  }
+
+  &--move{
+    margin: -3% 0 0 0;
+  }
+
+  &--move1 {
+    margin: 14% 0 14% 0;
+  }
+
+  &--move2 {
+    margin: 27% 0 14% 0;
+  }
+
+  &__email {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &__social-icon {
+    padding: 0 2% 0 0%;
+    display: inline-block;
+    margin: 0 9% 3% 0;
+  }
+
+  // Nested Media Query
+  @media (max-width: 767px) {
+    &--deskView {
+      display: none;
     }
-
-    &__social-icon {
-          padding: 0 2% 0 0%;
-          display: inline-block;
-          margin: 0 9% 3% 0;
-      }
-
+    &--mobileView {
+      display: block; 
+      padding: 0 0 0 3%;
     }
+  }
+}
 
-    // Footer Query to Make Desktop hide and mobile appear
 
-      @media (max-width: 767px) {
-        .footer--deskView {
-          display: none;
-        }
-        .footer--mobileView {
-          display: block; 
-          padding: 0 0 0 3%;
-        }
-      }
+
+
 
 // Footer Section Desktop
- .footer2 {
+//  .footer2 {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   width: 100%; 
+//   padding: 0; 
+//   margin: 0; 
+//   background-color: $primary1;
+//   color: #fff;
+
+//         &__info-m {
+//           margin: 0 0 2% 0;
+//         }
+
+//         &__social-icon{
+//           padding: 0 2% 0 0%;
+//           display: inline-block;
+//           margin: 0 0 3% 0;
+//       }
+
+//       &__email{
+//           display: inline-block;
+//           margin: 0 0 7% 0;
+//       }
+ 
+ 
+//       &__email {
+
+//           color: #fff;
+//           text-decoration: none;
+
+//       }
+
+//       @include tablet {
+//         display: flex;
+//         flex-direction: row;
+    
+//       }
+
+//       &--mobileView {
+//         display: none;
+//       }
+
+//   }
+
+ 
+
+//     @media (max-width: 767px) {
+//       .footer2--deskView {
+//         display: none;
+//       }
+//       .footer2--mobileView {
+//         display: block; 
+//         padding: 0 0 0 3%;
+//       }
+//     }
+    
+
+.footer2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -257,57 +318,46 @@ h3 {
   background-color: $primary1;
   color: #fff;
 
-        &__info-m {
-          margin: 0 0 2% 0;
-        }
-
-        &__social-icon{
-          padding: 0 2% 0 0%;
-          display: inline-block;
-          margin: 0 0 3% 0;
-      }
-
-      &__email{
-          display: inline-block;
-          margin: 0 0 7% 0;
-      }
- 
- 
-      &__email {
-
-          color: #fff;
-          text-decoration: none;
-
-      }
-
-      @include tablet {
-        display: flex;
-        flex-direction: row;
-    
-      }
-
-      &--mobileView {
-        display: none;
-      }
-
+  &__info-m {
+    margin: 0 0 2% 0;
   }
 
-  // Footer Query to Make Desktop hide and mobile appear
+  &__social-icon {
+    padding: 0 2% 0 0%;
+    display: inline-block;
+    margin: 0 0 3% 0;
+  }
 
-    @media (max-width: 767px) {
-      .footer2--deskView {
-        display: none;
-      }
-      .footer2--mobileView {
-        display: block; 
-        padding: 0 0 0 3%;
-      }
+  &__email {
+    display: inline-block;
+    margin: 0 0 7% 0;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &--mobileView {
+    display: none;
+  }
+
+  // Nested Media Query for .footer2
+  @media (max-width: 767px) {
+    &--deskView {
+      display: none;
     }
+    &--mobileView {
+      display: block; 
+      padding: 0 0 0 3%;
+    }
+  }
+}
 
 
 
-
-    
 // Copyright Section
 
   // mobile
@@ -319,27 +369,3 @@ h3 {
     margin: -1% 0 0 0;
 }
 
-
-// Subheader
-
-// Body Copy
-// Text size: 14px | Line height: 22px | Text weight: Regular 400
-// Footer Copy
-// Text size: 14px | Line height: 20px | Text weight: Regular 400
-// LABELS & BUTTONS
-
-// Text size: 12px | Line height: 20px | Text weight: Bold 700
-
-// MOBILE TEXT STYLES
-// Page Header
-// Text size: 24px | Line height: 32px | Text weight: Bold 700
-// Section Header
-// Text size: 24px | Line height: 32px | Text weight: Bold 700
-// Subheader
-// Text size: 14px | Line height: 22px | Text weight: Demi 600
-// Body Copy
-// Text size: 13px | Line height: 18px | Text weight: Regular 400
-// Footer Copy
-// Text size: 13px | Line height: 18px | Text weight: Regular 400
-// LABELS & BUTTONS
-// Text size: 10px | Line height: 20px | Text weight: Bold 700

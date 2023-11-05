@@ -100,11 +100,17 @@ body, p {
 }
 
 h1 {
-  font-family: "Avenir Next", sans-serif;
+  font-family: "Avenir Next Bold", sans-serif;
   font-size: 3.75rem;
   line-height: 4.25rem;
   font-weight: 700;
-  color: #fff;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.75rem;
+  }
 }
 
 h2 {
@@ -112,13 +118,21 @@ h2 {
   font-size: 2.25rem;
   line-height: 2.75rem;
   font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 2.25rem;
+    line-height: 2.27rem;
+  }
 }
 
 h3 {
-  font-family: "Avenir Next", sans-serif;
+  font-family: "Avenir Next Demi", sans-serif;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 .header {
@@ -144,7 +158,7 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 0.25rem 2rem;
+  padding: 0.25rem 0;
   align-items: center;
 }
 @media screen and (min-width: 768px) {
@@ -169,12 +183,13 @@ h3 {
   width: 100%;
 }
 .nav__link {
-  color: #FFFFFF;
+  color: #AFAFAF;
   text-decoration: none;
 }
 .nav__link--active {
   border-bottom: 0.187rem solid #FFFFFF;
   padding: 0 0 44% 0;
+  color: #FFFFFF;
 }
 @media (max-width: 767px) {
   .nav__list {
@@ -227,7 +242,6 @@ h3 {
   display: inline-block;
   margin: 0 9% 3% 0;
 }
-
 @media (max-width: 767px) {
   .footer--deskView {
     display: none;
@@ -237,6 +251,7 @@ h3 {
     padding: 0 0 0 3%;
   }
 }
+
 .footer2 {
   display: flex;
   flex-direction: column;
@@ -258,8 +273,6 @@ h3 {
 .footer2__email {
   display: inline-block;
   margin: 0 0 7% 0;
-}
-.footer2__email {
   color: #fff;
   text-decoration: none;
 }
@@ -272,7 +285,6 @@ h3 {
 .footer2--mobileView {
   display: none;
 }
-
 @media (max-width: 767px) {
   .footer2--deskView {
     display: none;
@@ -282,6 +294,7 @@ h3 {
     padding: 0 0 0 3%;
   }
 }
+
 .copyright {
   background-color: #323232;
   color: #fff;
@@ -313,10 +326,11 @@ h3 {
 }
 .hero__title {
   z-index: 0;
+  color: #FFFFFF;
 }
 
 .intro__title {
-  margin: 3% 0 3% 10%;
+  margin: 4% 0 4% 10%;
 }
 .intro__image {
   display: flex;

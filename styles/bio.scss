@@ -28,6 +28,8 @@ padding: 0 0 0 10%;
     
         &__title {
         z-index: 0;
+        color: $primary3;
+        
     }
 
 }
@@ -35,8 +37,7 @@ padding: 0 0 0 10%;
 .intro {
 
         &__title {
-            margin: 3% 0 3% 10%;
-            
+            margin: 4% 0 4% 10%;        
         } 
 
         &__image  {
