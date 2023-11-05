@@ -25,13 +25,17 @@ img {
 
   &__item {
     text-align: center;
-    padding: 20px 0;
+    padding: 2% 0;
     font-size: 5rem;
     border-radius: 5px;
     max-width: 300px; 
     margin: 0 auto; 
     text-align: center; 
 
+    @include tablet {
+      width: 40%;
+      margin: -1% 0;
+    }
 
     &--important {
       &:hover {
@@ -40,10 +44,7 @@ img {
       }
     }
 
-    @include tablet {
-      width: 40%;
-      margin: 3vw 0;
-    }
+
 
     @include desktop {
       width: calc(90% / 3);

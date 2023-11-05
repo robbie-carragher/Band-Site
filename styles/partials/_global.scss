@@ -31,38 +31,214 @@ h2 {
   font-family: $primary-font;
   font-size:2.25rem;
   line-height: 2.75rem;
-//  font-weight: 700;
+ font-weight: 700;
 
 }
 h3 {
   font-family: $primary-font;
   font-size:1.5rem;
   line-height: 2rem;
-//  font-weight: 600;
+ font-weight: 600;
 
 } 
 
-// Subheader
 
-// Body Copy
-// Text size: 14px | Line height: 22px | Text weight: Regular 400
-// Footer Copy
-// Text size: 14px | Line height: 20px | Text weight: Regular 400
-// LABELS & BUTTONS
-// Text size: 12px | Line height: 20px | Text weight: Bold 700
-// MOBILE TEXT STYLES
-// Page Header
-// Text size: 24px | Line height: 32px | Text weight: Bold 700
-// Section Header
-// Text size: 24px | Line height: 32px | Text weight: Bold 700
-// Subheader
-// Text size: 14px | Line height: 22px | Text weight: Demi 600
-// Body Copy
-// Text size: 13px | Line height: 18px | Text weight: Regular 400
-// Footer Copy
-// Text size: 13px | Line height: 18px | Text weight: Regular 400
-// LABELS & BUTTONS
-// Text size: 10px | Line height: 20px | Text weight: Bold 700
+
+// .header {
+//   position: sticky;
+//   top: 0;
+//   z-index: 2;
+//   background-color: $primary1; 
+// }
+
+// .wrapper {
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   padding: 10px 20px;
+// }
+
+// .nav {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   padding: 0.25rem 2rem;
+//   align-items: center;
+
+//   @include tablet {
+//     display: flex;
+//     flex-direction: row;
+//   }
+
+//       &__site-title {
+//           color: $primary3;
+//           text-decoration: none;  
+//           font-size: 1.5rem;
+//       }
+
+//       &__list {
+//           display: flex;
+//           list-style-type: none;
+//           text-decoration: none;
+//           gap: 1rem;
+//           align-items: center;
+//           font-weight: 300; 
+//           font-size: 0.86rem;  
+//           color:$primary2; 
+
+         
+//           flex-direction: row;
+//           width: 100%;
+//           padding: 0; /* Reset padding if necessary */
+//           margin: 0; /* Reset margin if necessary */
+//           list-style: none; /* Remove bullet points from list */
+          
+//       }
+
+
+//       &__link{
+//             text-decoration: none;
+//       }
+
+//       &__link--active {
+//         border-bottom: .187rem solid $primary3;
+//           padding: 0 0 44% 0;
+//           color:$primary3 ; 
+//       }
+
+//       &__link--inactive {
+//           color:$primary2 ; 
+//       }
+
+// }
+
+
+// @media (max-width: 767px) {
+//   // .nav__list {
+//   //   display: flex; /* Enable flexbox */
+//   //   flex-direction: row; /* Stack items vertically */
+//   //   width: 100%; /* Full width of the container */
+//   //   padding: 0; /* Reset padding if necessary */
+//   //   margin: 0; /* Reset margin if necessary */
+//   //   list-style: none; /* Remove bullet points from list */
+//   // }
+
+//   .nav__item {
+//     width: 50%; /* Each nav item takes full width of the .nav__list */
+//   }
+
+//   .nav__link {
+//     display: block; /* Make the links fill their container (the .nav__item) */
+//     text-align: center; /* Center the text within the links */
+//     padding: 10px 0; /* Add some padding for touch targets, adjust as needed */
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .header {
+//   position: sticky;
+//   top: 0;
+//   z-index: 2;
+//   background-color: $primary1; 
+// }
+
+// .wrapper {
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   padding: 2% 0 0 0;
+
+//   @include tablet {
+//     margin: 0 0 0 5%;
+//     padding: 1% 0 0.8rem 0;
+//   }
+// }
+
+// .nav {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   padding: 0.25rem 2rem;
+//   align-items: center;
+
+//   @include tablet {
+//     display: flex;
+//     flex-direction: row;
+//   }
+
+//       &__site-title {
+//           color: $primary3;
+//           text-decoration: none;  
+//           font-size: 1.5rem;
+//       }
+
+//       &__list {
+//         color:$primary3;
+//         display: flex;
+//         flex-direction: row;
+//         list-style-type: none;
+//         text-decoration: none;
+//         width: 100%;
+//         gap: 1rem;
+//         align-items: center;
+//         font-weight: 300;   
+//       }
+
+//       &__item {
+//         width: 100%;
+//         @include tablet {
+//           width: 12%;  
+//         }
+//       }
+
+//       &__list a {
+//           color:$primary3; 
+//           text-decoration: none; 
+//       }
+
+//       &__link--active {
+//         border-bottom: .187rem solid $primary3;
+//           padding: 0 0 44% 0;
+//       }
+
+//       &__link  {
+//         color:$primary3; 
+//         text-decoration: none; 
+//         display: block;
+//         text-align: center; 
+//         padding: 10px 0 10px 0; 
+//         @include tablet {
+
+//     padding: 15px 0 38px 0;
+//     margin: 0 0 -46% 0;
+//         }
+      
+//       }
+
+
+// }
 
 
 
@@ -76,17 +252,12 @@ h3 {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px 20px;
-}
+  padding: 2% 0 0 0;
 
-
-
-.nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 0.25rem 2rem;
-    align-items: center;
+  @include tablet {
+    margin: 0 0 0 5%;
+    padding: 1% 0 0.8rem 0;
+  }
 }
 
 .nav {
@@ -96,7 +267,7 @@ h3 {
   padding: 0.25rem 2rem;
   align-items: center;
 
-  @include tablet {
+    @include tablet {
     display: flex;
     flex-direction: row;
   }
@@ -108,66 +279,204 @@ h3 {
       }
 
       &__list {
-          // color:$primary3;
+          color:$primary3;
           display: flex;
           list-style-type: none;
           text-decoration: none;
           gap: 1rem;
           align-items: center;
-          font-weight: 300; 
-          // color:$primary3;   
+          font-weight: 300;   
       }
 
-      &__list {
-          // color:$second2; 
-          text-decoration: none;
-          font-size: 0.86rem;
-          color:$primary2; 
-      }
-
-      &__link{
-            text-decoration: none;
+      &__list a {
+          color:$primary3; 
+          text-decoration: none; 
       }
 
       &__link--active {
         border-bottom: .187rem solid $primary3;
           padding: 0 0 44% 0;
-          color:$primary3 ; 
       }
-
-      &__link--inactive {
-          color:$primary2 ; 
-      }
-
-
 
 }
 
-// Footer Section
-.footer-section{
+
+
+@media (max-width: 767px) {
+  .nav__list {
+    display: flex; 
+    flex-direction: row;
+    width: 100%; 
+    padding: 0; 
+    margin: 0; 
+    list-style: none; 
+  }
+
+  .nav__item {
+    width: 50%; 
+  }
+
+  .nav__link {
+    display: block; 
+    text-align: center; 
+    padding: 10px 0; 
+  }
+}
+
+// Footer Section Desktop
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%; 
-    padding: 0; 
+    padding: 6% 5% 6% 5%;
     margin: 0; 
     background-color: $primary1;
     color: #fff;
 
+
     @include tablet {
       display: flex;
       flex-direction: row;
+  
+    }
+ 
+      &__info {
+            margin: 0 0 14% 0;
+          }
+
+        &--move{
+          margin: -3% 0 0 0;
+        }
+
+        &--move1 {
+          margin: 14% 0 14% 0;
+        }
+        &--move2 {
+          margin: 27% 0 14% 0;
+        }
+   
+    &__email {
+
+            color: #fff;
+            text-decoration: none;
+
     }
 
+    &__social-icon {
+          padding: 0 2% 0 0%;
+          display: inline-block;
+          margin: 0 9% 3% 0;
+      }
+
     }
 
+    // Footer Query to Make Desktop hide and mobile appear
 
+      @media (max-width: 767px) {
+        .footer--deskView {
+          display: none;
+        }
+        .footer--mobileView {
+          display: block; 
+          padding: 0 0 0 3%;
+        }
+      }
 
+// Footer Section Desktop
+ .footer2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%; 
+  padding: 0; 
+  margin: 0; 
+  background-color: $primary1;
+  color: #fff;
 
+        &__info-m {
+          margin: 0 0 2% 0;
+        }
 
+        &__social-icon{
+          padding: 0 2% 0 0%;
+          display: inline-block;
+          margin: 0 0 3% 0;
+      }
 
-    .copyright-section {
-      background-color: $primary1;
-      padding: .5% 0 .5% 0;
-      color: #fff;
+      &__email{
+          display: inline-block;
+          margin: 0 0 7% 0;
+      }
+ 
+ 
+      &__email {
+
+          color: #fff;
+          text-decoration: none;
+
+      }
+
+      @include tablet {
+        display: flex;
+        flex-direction: row;
+    
+      }
+
+      &--mobileView {
+        display: none;
+      }
+
   }
+
+  // Footer Query to Make Desktop hide and mobile appear
+
+    @media (max-width: 767px) {
+      .footer2--deskView {
+        display: none;
+      }
+      .footer2--mobileView {
+        display: block; 
+        padding: 0 0 0 3%;
+      }
+    }
+
+
+
+
+    
+// Copyright Section
+
+  // mobile
+  .copyright {
+    background-color:  $primary1;
+    color: #fff;
+    margin: 0 0 0 0;
+    padding: 2% 0% 2% 3%;
+    margin: -1% 0 0 0;
+}
+
+
+// Subheader
+
+// Body Copy
+// Text size: 14px | Line height: 22px | Text weight: Regular 400
+// Footer Copy
+// Text size: 14px | Line height: 20px | Text weight: Regular 400
+// LABELS & BUTTONS
+
+// Text size: 12px | Line height: 20px | Text weight: Bold 700
+
+// MOBILE TEXT STYLES
+// Page Header
+// Text size: 24px | Line height: 32px | Text weight: Bold 700
+// Section Header
+// Text size: 24px | Line height: 32px | Text weight: Bold 700
+// Subheader
+// Text size: 14px | Line height: 22px | Text weight: Demi 600
+// Body Copy
+// Text size: 13px | Line height: 18px | Text weight: Regular 400
+// Footer Copy
+// Text size: 13px | Line height: 18px | Text weight: Regular 400
+// LABELS & BUTTONS
+// Text size: 10px | Line height: 20px | Text weight: Bold 700
