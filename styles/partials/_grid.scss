@@ -43,9 +43,7 @@ img {
         }
       }
     }
-
-
-
+    
     @include desktop {
       width: calc(90% / 3);
       // margin: 1.25vw 0;

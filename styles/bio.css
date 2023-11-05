@@ -166,8 +166,9 @@ h3 {
   gap: 1rem;
   align-items: center;
   font-weight: 300;
+  width: 100%;
 }
-.nav__list a {
+.nav__link {
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -175,15 +176,9 @@ h3 {
   border-bottom: 0.187rem solid #FFFFFF;
   padding: 0 0 44% 0;
 }
-
 @media (max-width: 767px) {
   .nav__list {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 0;
     margin: 0;
-    list-style: none;
   }
   .nav__item {
     width: 50%;
@@ -194,6 +189,7 @@ h3 {
     padding: 10px 0;
   }
 }
+
 .footer {
   display: flex;
   flex-direction: column;

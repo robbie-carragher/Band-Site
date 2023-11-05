@@ -42,206 +42,6 @@ h3 {
 
 } 
 
-
-
-// .header {
-//   position: sticky;
-//   top: 0;
-//   z-index: 2;
-//   background-color: $primary1; 
-// }
-
-// .wrapper {
-//   max-width: 1200px;
-//   margin: 0 auto;
-//   padding: 10px 20px;
-// }
-
-// .nav {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-start;
-//   padding: 0.25rem 2rem;
-//   align-items: center;
-
-//   @include tablet {
-//     display: flex;
-//     flex-direction: row;
-//   }
-
-//       &__site-title {
-//           color: $primary3;
-//           text-decoration: none;  
-//           font-size: 1.5rem;
-//       }
-
-//       &__list {
-//           display: flex;
-//           list-style-type: none;
-//           text-decoration: none;
-//           gap: 1rem;
-//           align-items: center;
-//           font-weight: 300; 
-//           font-size: 0.86rem;  
-//           color:$primary2; 
-
-         
-//           flex-direction: row;
-//           width: 100%;
-//           padding: 0; /* Reset padding if necessary */
-//           margin: 0; /* Reset margin if necessary */
-//           list-style: none; /* Remove bullet points from list */
-          
-//       }
-
-
-//       &__link{
-//             text-decoration: none;
-//       }
-
-//       &__link--active {
-//         border-bottom: .187rem solid $primary3;
-//           padding: 0 0 44% 0;
-//           color:$primary3 ; 
-//       }
-
-//       &__link--inactive {
-//           color:$primary2 ; 
-//       }
-
-// }
-
-
-// @media (max-width: 767px) {
-//   // .nav__list {
-//   //   display: flex; /* Enable flexbox */
-//   //   flex-direction: row; /* Stack items vertically */
-//   //   width: 100%; /* Full width of the container */
-//   //   padding: 0; /* Reset padding if necessary */
-//   //   margin: 0; /* Reset margin if necessary */
-//   //   list-style: none; /* Remove bullet points from list */
-//   // }
-
-//   .nav__item {
-//     width: 50%; /* Each nav item takes full width of the .nav__list */
-//   }
-
-//   .nav__link {
-//     display: block; /* Make the links fill their container (the .nav__item) */
-//     text-align: center; /* Center the text within the links */
-//     padding: 10px 0; /* Add some padding for touch targets, adjust as needed */
-//   }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .header {
-//   position: sticky;
-//   top: 0;
-//   z-index: 2;
-//   background-color: $primary1; 
-// }
-
-// .wrapper {
-//   max-width: 1200px;
-//   margin: 0 auto;
-//   padding: 2% 0 0 0;
-
-//   @include tablet {
-//     margin: 0 0 0 5%;
-//     padding: 1% 0 0.8rem 0;
-//   }
-// }
-
-// .nav {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-start;
-//   padding: 0.25rem 2rem;
-//   align-items: center;
-
-//   @include tablet {
-//     display: flex;
-//     flex-direction: row;
-//   }
-
-//       &__site-title {
-//           color: $primary3;
-//           text-decoration: none;  
-//           font-size: 1.5rem;
-//       }
-
-//       &__list {
-//         color:$primary3;
-//         display: flex;
-//         flex-direction: row;
-//         list-style-type: none;
-//         text-decoration: none;
-//         width: 100%;
-//         gap: 1rem;
-//         align-items: center;
-//         font-weight: 300;   
-//       }
-
-//       &__item {
-//         width: 100%;
-//         @include tablet {
-//           width: 12%;  
-//         }
-//       }
-
-//       &__list a {
-//           color:$primary3; 
-//           text-decoration: none; 
-//       }
-
-//       &__link--active {
-//         border-bottom: .187rem solid $primary3;
-//           padding: 0 0 44% 0;
-//       }
-
-//       &__link  {
-//         color:$primary3; 
-//         text-decoration: none; 
-//         display: block;
-//         text-align: center; 
-//         padding: 10px 0 10px 0; 
-//         @include tablet {
-
-//     padding: 15px 0 38px 0;
-//     margin: 0 0 -46% 0;
-//         }
-      
-//       }
-
-
-// }
-
-
-
 .header {
   position: sticky;
   top: 0;
@@ -260,6 +60,74 @@ h3 {
   }
 }
 
+// .nav {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   padding: 0.25rem 2rem;
+//   align-items: center;
+
+//     @include tablet {
+//     display: flex;
+//     flex-direction: row;
+//   }
+
+//       &__site-title {
+//           color: $primary3;
+//           text-decoration: none;  
+//           font-size: 1.5rem;
+//       }
+
+//       &__list {
+//           color:$primary3;
+//           display: flex;
+//           list-style-type: none;
+//           text-decoration: none;
+//           gap: 1rem;
+//           align-items: center;
+//           font-weight: 300;
+//           width: 100%; 
+
+//           @include tablet {
+//             // margin: 0; 
+//           }
+//       }
+
+//       &__link  {
+//           color:$primary3; 
+//           text-decoration: none; 
+//       }
+
+//       &__link--active {
+//         border-bottom: .187rem solid $primary3;
+//           padding: 0 0 44% 0;
+//       }
+
+
+
+
+
+// }
+
+
+// @media (max-width: 767px) {
+//   .nav__list {
+//     margin: 0; 
+   
+//   }
+
+//   .nav__item {
+//     width: 50%; 
+//   }
+
+//   .nav__link {
+//     display: block; 
+//     text-align: center; 
+//     padding: 10px 0; 
+//   }
+// }
+
+
 .nav {
   display: flex;
   flex-direction: column;
@@ -267,59 +135,54 @@ h3 {
   padding: 0.25rem 2rem;
   align-items: center;
 
-    @include tablet {
+  @include tablet {
     display: flex;
     flex-direction: row;
   }
 
-      &__site-title {
-          color: $primary3;
-          text-decoration: none;  
-          font-size: 1.5rem;
-      }
+  &__site-title {
+    color: $primary3;
+    text-decoration: none;  
+    font-size: 1.5rem;
+  }
 
-      &__list {
-          color:$primary3;
-          display: flex;
-          list-style-type: none;
-          text-decoration: none;
-          gap: 1rem;
-          align-items: center;
-          font-weight: 300;   
-      }
-
-      &__list a {
-          color:$primary3; 
-          text-decoration: none; 
-      }
-
-      &__link--active {
-        border-bottom: .187rem solid $primary3;
-          padding: 0 0 44% 0;
-      }
-
-}
-
-
-
-@media (max-width: 767px) {
-  .nav__list {
-    display: flex; 
-    flex-direction: row;
+  &__list {
+    color: $primary3;
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    gap: 1rem;
+    align-items: center;
+    font-weight: 300;
     width: 100%; 
-    padding: 0; 
-    margin: 0; 
-    list-style: none; 
   }
 
-  .nav__item {
-    width: 50%; 
+  &__link {
+    color: $primary3; 
+    text-decoration: none; 
+
+    // Modifier for the active state of the link
+    &--active {
+      border-bottom: .187rem solid $primary3;
+      padding: 0 0 44% 0;
+    }
   }
 
-  .nav__link {
-    display: block; 
-    text-align: center; 
-    padding: 10px 0; 
+  // This is the added media query for mobile devices
+  @media (max-width: 767px) {
+    &__list {
+      margin: 0; 
+    }
+
+    &__item {
+      width: 50%; 
+    }
+
+    &__link {
+      display: block; 
+      text-align: center; 
+      padding: 10px 0; 
+    }
   }
 }
 
