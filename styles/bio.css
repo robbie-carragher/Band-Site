@@ -94,9 +94,16 @@ body, p {
   margin: 0;
   padding: 0;
   font-family: "Avenir Next", sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.375rem;
+  font-size: 0.81rem;
+  line-height: 1.125rem;
   font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  html,
+  body, p {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
 }
 
 h1 {
@@ -114,9 +121,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Avenir Next", sans-serif;
-  font-size: 2.25rem;
-  line-height: 2.75rem;
+  font-family: "Avenir Next Bold", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -130,9 +135,15 @@ h2 {
 
 h3 {
   font-family: "Avenir Next Demi", sans-serif;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.38rem;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 .header {

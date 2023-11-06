@@ -14,9 +14,15 @@ body,p{
   margin: 0;
   padding: 0;
   font-family:$primary-font;
-  font-size: .875rem;
-  line-height: 1.375rem;
+  font-size: .81rem;
+  line-height: 1.125rem;
   font-weight:400;
+
+      @include tablet {
+            font-size: .875rem;
+            line-height: 1.375rem;
+        }
+
 }
 
 h1 {
@@ -33,9 +39,7 @@ h1 {
 }
 
 h2 {  
-  font-family: $primary-font;
-  font-size:2.25rem;
-  line-height: 2.75rem;
+  font-family: $bold-font;
  font-weight: 700;
  font-size: 1.5rem;
  line-height: 2rem;
@@ -48,9 +52,14 @@ h2 {
 }
 h3 {
   font-family:$demi-font;
-  font-size:1.5rem;
+  font-size: .875rem;
+  line-height: 1.38rem;
+ font-weight: 600;
+
+ @include tablet {
+  font-size: 1.5rem;
   line-height: 2rem;
- font-weight: 300;
+}  
 
 } 
 
@@ -130,66 +139,7 @@ h3 {
   }
 }
 
-// Footer Section Desktop
-// .footer {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-//     width: 100%; 
-//     padding: 6% 5% 6% 5%;
-//     margin: 0; 
-//     background-color: $primary1;
-//     color: #fff;
-
-
-//     @include tablet {
-//       display: flex;
-//       flex-direction: row;
-  
-//     }
- 
-//       &__info {
-//             margin: 0 0 14% 0;
-//           }
-
-//         &--move{
-//           margin: -3% 0 0 0;
-//         }
-
-//         &--move1 {
-//           margin: 14% 0 14% 0;
-//         }
-//         &--move2 {
-//           margin: 27% 0 14% 0;
-//         }
-   
-//     &__email {
-
-//             color: #fff;
-//             text-decoration: none;
-
-//     }
-
-//     &__social-icon {
-//           padding: 0 2% 0 0%;
-//           display: inline-block;
-//           margin: 0 9% 3% 0;
-//       }
-
-//     }
-
-//       @media (max-width: 767px) {
-//         .footer--deskView {
-//           display: none;
-//         }
-//         .footer--mobileView {
-//           display: block; 
-//           padding: 0 0 0 3%;
-//         }
-//       }
-
-
-// Test 
+// Footer Desktop/Tablet View
 
 .footer {
   display: flex;
@@ -245,69 +195,7 @@ h3 {
   }
 }
 
-
-
-
-
-// Footer Section Desktop
-//  .footer2 {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-//   width: 100%; 
-//   padding: 0; 
-//   margin: 0; 
-//   background-color: $primary1;
-//   color: #fff;
-
-//         &__info-m {
-//           margin: 0 0 2% 0;
-//         }
-
-//         &__social-icon{
-//           padding: 0 2% 0 0%;
-//           display: inline-block;
-//           margin: 0 0 3% 0;
-//       }
-
-//       &__email{
-//           display: inline-block;
-//           margin: 0 0 7% 0;
-//       }
- 
- 
-//       &__email {
-
-//           color: #fff;
-//           text-decoration: none;
-
-//       }
-
-//       @include tablet {
-//         display: flex;
-//         flex-direction: row;
-    
-//       }
-
-//       &--mobileView {
-//         display: none;
-//       }
-
-//   }
-
- 
-
-//     @media (max-width: 767px) {
-//       .footer2--deskView {
-//         display: none;
-//       }
-//       .footer2--mobileView {
-//         display: block; 
-//         padding: 0 0 0 3%;
-//       }
-//     }
-    
-
+// Mobile footer Styles
 .footer2 {
   display: flex;
   flex-direction: column;
@@ -344,7 +232,6 @@ h3 {
     display: none;
   }
 
-  // Nested Media Query for .footer2
   @media (max-width: 767px) {
     &--deskView {
       display: none;
@@ -355,8 +242,6 @@ h3 {
     }
   }
 }
-
-
 
 // Copyright Section
 
