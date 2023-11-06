@@ -4,87 +4,130 @@
 @use 'partials/mixins' as *;
 
 
+// Hero Section
 .hero {
-position: relative;
-background-image: url('../assets/Images/hero-bio.jpg');
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
-min-height: 37.5rem;
-display: flex; 
-align-items: center; 
-padding: 0 0 0 10%;
-
+    position: relative;
+    background-image: url('../assets/Images/hero-bio.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 15rem; 
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 10%;
+  
     &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 0;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
     }
-    
-        &__title {
-        z-index: 0;
-        color: $primary3;
-        
+  
+    &__title {
+      z-index: 1; 
+      color: $primary3;
     }
-
-}
-
+  
+    @media (min-width: 500px) {
+      min-height: 35rem;
+      background-attachment: fixed;
+    }
+  }
+  
 .intro {
-
-        &__title {
-            margin: 4% 0 4% 10%;        
-        } 
-
-        &__image  {
-            display: flex;
-            justify-content: center;
-            
-        
-            img {
-                width: 70%;
-                height: 31.25rem;
-            }
-}
-}
+    &__title {
+      margin: 4% 0 4% 10%;        
+    } 
+  
+    &__image {
+      display: flex;
+      justify-content: center;
+      max-width: 100%;
+      margin: 0 auto;
+      
+      img {
+        width: 90%;
+        height: auto; 
+  
+        @media (min-width: 500px) { 
+          width: 70%; 
+          height: 31.25rem; 
+          max-width: 1280px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
 
 .intro-inner {
-    margin: 2% 0 0 15%;
+  
+    margin: 2% 1% 0 15%;
+  
+    &__para--bold {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      font-weight: 500;
+      width: 56%;
+    }
+  
+    &__para--margin {
+      font-size: 1rem;  
+    }
+  
+  
+    @media (max-width: 320px) {
+      margin: 6% 1% 0 6%;
+      width: 150%;
+  
+      &__para--bold {
+        font-size: 1rem;
+      }
+    }
+  
 
-        &__para--bold {
-            font-size: 1.5rem;
-            line-height: 2rem;
-            font-weight: 500;
-            width: 56%;
-        }
-
-        &__para--margin {
-            font-size: 1rem;  
-        }
-}
-.content {
+    @media (min-width: 500px) {
+      margin: 2% 1% 0 15%;
     
+  
+      &__para--bold {
+        font-size: 1.5rem;
+        width: 82%;
+      }
+    }
+  }
+
+.content {
+
     &__flex {
-        display: flex;
-        flex-direction: row;
-        margin: 0 20px;
-        justify-content: space-between;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 auto; 
+      padding: 0 20px; 
+ 
+      width: 71%;
+  
+      @media (max-width: 320px) {
+        width: 100%;
+      }
+
+      @media (min-width: 500px) {
         width: 71%;
-        margin: 0 auto;
+      }
     }
-
+  
     &__title {
-        margin: 3% 0 1% 14.5%;  
+      margin: 3% 0 1% 14.5%;  
     }
-
-    &__para{
-        padding: 0 5% 0 0px;    
+  
+    &__para {
+      padding: 0 5% 0 0;    
     }
-}
+  }
+  
     
 
 .main__title {
