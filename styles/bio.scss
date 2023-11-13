@@ -142,6 +142,8 @@
   }
 }
 
+// Comment Area
+
 #avatar-preview {
   width: 45px;
   height: 45px;
@@ -150,3 +152,109 @@
   display: block;
   margin-bottom: 10px;
 }
+
+.comment-form {
+  padding: 0 1rem;
+
+  &__image {
+    display:flex;
+  }
+  &__submit {
+    border: none;
+    color: #fff;
+    background-color: #323232;
+    border-radius: 3px;
+  } 
+
+  &__flex {
+    margin-left: 8%; 
+  }
+
+  &__text {
+    border: 0.5px solid #AFAFAF;
+    background: #FAFAFA;
+    padding: 4% 0 11% 5%;
+    border-radius: 4%;
+    width: 76%;
+    margin: 0 0 0 22%;
+  }
+
+  &__label{
+    margin: 7% 0 2% 23%;
+    color: #AFAFAF;
+  }
+
+  &-title {
+    padding: 0 1rem;
+  }
+
+  @include tablet {
+
+  }
+}
+
+.comment-area {
+  padding: 0 0 0 1rem;
+  
+    &__item {
+    list-style-type: none;
+    &__image {
+      border-radius: 50%;
+    }
+  }
+
+  &__description {
+    width: 79%;
+    margin: 0 0 6% 17%;
+}
+}
+
+.comment-area__flex-wrapper {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+  margin: 0 0 0 0%;
+  border-top: 1px solid #E1E1E1;
+    padding: 4% 0 0 0;
+}
+
+.comment-form-title {
+  padding: 0 1rem;
+}
+
+#personName {
+  border: 0.5px solid #AFAFAF;
+  background: #FAFAFA;
+  padding: 11%;
+  border-radius: 4%;
+  width: 157%;
+}
+
+
+.comment-form__name{
+  margin: 0 0 3% 0;
+  color: #AFAFAF;
+}
+
+.comment-form__submit {
+  width: 85%;
+  margin: 0 0 0 19%;
+  padding: 4% 0 4% 0;
+}
+
+.comment-form--border {
+  padding: 0 1rem 7% 1rem;
+
+}
+
+.comment-area__image {
+  width: 45px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.comment-area:last-child {
+  border-bottom: 1px solid #E1E1E1;
+}
+
+
