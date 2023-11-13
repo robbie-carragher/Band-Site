@@ -524,4 +524,13 @@ h3 {
   .main__title {
     margin: 7% 1rem 0% 7rem;
   }
+}
+
+#avatar-preview {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #E1E1E1;
+  display: block;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=bio.css.map */
