@@ -1,0 +1,507 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem 0 1rem;
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    padding: 0 2.25rem 0 2.25rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .gallery {
+    padding: 0 7rem 5% 7rem;
+  }
+}
+.gallery img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+.gallery img:hover {
+  filter: grayscale(100%);
+}
+.gallery__item {
+  text-align: center;
+  padding: 2% 0;
+  font-size: 5rem;
+  border-radius: 5px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .gallery__item {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .gallery__item {
+    width: 30%;
+    margin: -1% 0;
+  }
+}
+
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/Font/AvenirNextLTPro-Regular.woff2") format("woff2"), url("../assets/Font/AvenirNextLTPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/Font/AvenirNextLTPro-Demi.woff2") format("woff2"), url("../assets/Font/AvenirNextLTPro-Demi.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/Font/AvenirNextLTPro-Demi.woff2") format("woff2"), url("../assets/Font/AvenirNextLTPro-Demi.woff2") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/Font/AvenirNextLTPro-Demi.woff2") format("woff2"), url("../assets/Font/AvenirNextLTPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/Font/AvenirNextLTPro-Bold.woff2") format("woff2"), url("../assets/Font/AvenirNextLTPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/Font/AvenirNextLTPro-Bold.woff2") format("woff2"), url("../assets/Font/AvenirNextLTPro-Bold.woff2") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "Avenir Next", sans-serif;
+  font-size: 0.81rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  html,
+  body,
+  p {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+}
+
+h1 {
+  font-family: "Avenir Next Bold", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+    padding: 0 2.25rem;
+  }
+}
+
+h2 {
+  font-family: "Avenir Next Bold", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 2.25rem;
+    line-height: 2.27rem;
+    padding: 0 2.25rem;
+  }
+}
+
+h3 {
+  font-family: "Avenir Next Demi", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.38rem;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 0 2.25rem;
+  }
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #323232;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 5% 0 0 0;
+}
+@media screen and (min-width: 768px) {
+  .wrapper {
+    padding: 0 0 0 2.25rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    padding: 0 0 0 8rem;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.nav__site-title {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.nav__item {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .nav__item {
+    max-width: 4.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav__item--margin {
+    margin: 0 0 0 4%;
+  }
+}
+.nav__list {
+  color: #ffffff;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  font-weight: 300;
+  margin: 1% 0 0 0;
+  width: 125%;
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0% 0 1%;
+  }
+}
+.nav__link {
+  color: #AFAFAF;
+  text-decoration: none;
+  transition: color 0.3s ease, opacity 0.3s ease;
+  display: block;
+  text-align: center;
+  padding: 0.8125rem 0;
+}
+.nav__link--active {
+  border-bottom: 0.2rem solid #FFFFFF;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .nav__link--active {
+    padding: 0 0 41% 0;
+    margin: 46% 0 0 0;
+  }
+}
+.nav__link--move {
+  padding: 0 16% 0 0;
+}
+.nav__link:hover {
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 0.7;
+}
+
+.footer {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 6% 0 6% 5%;
+    margin: 0;
+    background-color: #323232;
+    color: #fff;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding: 6% 6% 6% 9%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__title {
+    padding: 0;
+    font-size: 2.25rem;
+  }
+}
+.footer__info {
+  margin: 0 0 14% 0;
+}
+.footer__info--margin {
+  margin: 0 0 0 0;
+}
+@media screen and (min-width: 1280px) {
+  .footer__info--margin {
+    margin: 16% 0 13% 0;
+  }
+}
+.footer__info--bold {
+  margin: 5% 0 4% 0;
+  font-weight: 600;
+}
+.footer__list--margin {
+  margin: -5% 0 0 0;
+}
+@media screen and (min-width: 1280px) {
+  .footer__list--margin {
+    margin: -4% 0 0 0;
+  }
+}
+.footer--move1 {
+  margin: 14% 0 14% 0;
+}
+.footer--move2 {
+  margin: 27% 0 14% 0;
+}
+.footer__email {
+  color: #fff;
+  text-decoration: none;
+}
+.footer__social-icon {
+  padding: 0 2% 0 0%;
+  display: inline-block;
+  margin: 0 9% 3% 0;
+}
+.footer__logo {
+  margin: 0 0 0 -42%;
+}
+
+.footer2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #323232;
+  color: #fff;
+  padding: 0 1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer2 {
+    display: none;
+  }
+}
+.footer2__title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+.footer2__info--bold {
+  margin: 5% 0 4% 0;
+  font-weight: 600;
+}
+.footer2__info--move {
+  margin: 0 0 0 0;
+}
+.footer2__info--mobile {
+  font-weight: 400;
+}
+.footer2__social-icon {
+  padding: 0 2% 0 10%;
+  margin: 0 4% 6% -9%;
+}
+.footer2__email {
+  display: inline-block;
+  margin: 5% 0 5% 0;
+  color: #fff;
+  text-decoration: none;
+}
+.footer2__logo {
+  margin: 12% 0 0 0;
+  display: inline-block;
+}
+
+.copyright {
+  background-color: #323232;
+  color: #fff;
+  margin: 0 0 0 0;
+  margin: -2% 0 0 0;
+  padding: 1rem 1rem 2rem 1rem;
+}
+@media screen and (min-width: 768px) {
+  .copyright {
+    padding: 1rem 1rem 2rem 2.25rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .copyright {
+    padding: 0 1rem 2rem 8rem;
+    margin-top: -3%;
+  }
+}
+
+.show__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  flex-direction: column;
+  margin: 0.625rem auto;
+}
+.show__item {
+  padding: 0.325rem;
+  border-bottom: 2px solid black;
+}
+.show__detail {
+  background: lightcyan;
+}
+
+/* Ensures the UL element displays its children in a flex column */
+.shows__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0; /* Removes default padding */
+  list-style: none; /* Removes default list styling */
+}
+
+/* Styles each LI to be a full row */
+.shows__list li {
+  width: 100%; /* Each list item takes full width of the UL */
+  margin-bottom: 10px; /* Adds some space between rows */
+  /* More styling here */
+}
+
+.shows__list {
+  list-style: none; /* Removes bullet points from the list */
+  padding: 0; /* Removes default padding */
+}
+
+.show__item {
+  display: flex; /* Establishes flex container */
+  align-items: center; /* Aligns items vertically */
+  justify-content: flex-start; /* Aligns items horizontally */
+  gap: 10px; /* Adds space between items */
+  margin-bottom: 10px; /* Adds space between list items */
+  width: 33%;
+}
+
+.show__details,
+.show__venue,
+.show__location {
+  margin: 0; /* Removes default margin from paragraphs */
+  width: 33%;
+  display: flex;
+}
+
+.show__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px; /* Adjust the gap as needed */
+  margin-bottom: 10px; /* Adds space between items */
+}
+
+.show__details,
+.show__venue,
+.show__location {
+  margin: 0; /* Adjust margin as needed */
+}
+
+.hero-show {
+  position: relative;
+  background-image: url("../assets/Images/hero-shows.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 15rem;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 10%;
+}
+.hero-show::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+.hero-show__title {
+  z-index: 1;
+  color: #FFFFFF;
+}
+@media (min-width: 500px) {
+  .hero-show {
+    min-height: 35rem;
+    background-attachment: fixed;
+  }
+}
+
+.intro__title {
+  margin: 4% 0 4% 10%;
+}
+.intro__image {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.intro__image img {
+  width: 90%;
+  height: auto;
+}
+@media (min-width: 500px) {
+  .intro__image img {
+    width: 70%;
+    height: 31.25rem;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=shows.css.map */

@@ -1,0 +1,133 @@
+@use 'partials/variables' as *;
+@use 'partials/grid';
+@use 'partials/global';
+@use 'partials/mixins' as *;
+
+.show {
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+      flex-direction: column;
+      margin: 0.625rem auto;
+    }
+    &__item {
+      padding: 0.325rem;
+      border-bottom: 2px solid black;
+    }
+    &__detail {
+      background: lightcyan;
+    }
+  }
+  
+  
+  /* Ensures the UL element displays its children in a flex column */
+  .shows__list {
+    display: flex;
+    flex-direction: column;
+    padding: 0; /* Removes default padding */
+    list-style: none; /* Removes default list styling */
+  }
+  
+  /* Styles each LI to be a full row */
+  .shows__list li {
+    width: 100%; /* Each list item takes full width of the UL */
+    margin-bottom: 10px; /* Adds some space between rows */
+    /* More styling here */
+  }
+  .shows__list {
+    list-style: none; /* Removes bullet points from the list */
+    padding: 0; /* Removes default padding */
+  }
+  
+  .show__item {
+    display: flex; /* Establishes flex container */
+    align-items: center; /* Aligns items vertically */
+    justify-content: flex-start; /* Aligns items horizontally */
+    gap: 10px; /* Adds space between items */
+    margin-bottom: 10px; /* Adds space between list items */
+    width: 33%;
+  }
+  
+  .show__details,
+  .show__venue,
+  .show__location {
+    margin: 0; /* Removes default margin from paragraphs */
+    width: 33%;
+    display: flex;
+  }
+  
+  .show__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px; /* Adjust the gap as needed */
+    margin-bottom: 10px; /* Adds space between items */
+  }
+  
+  .show__details,
+  .show__venue,
+  .show__location {
+    margin: 0; /* Adjust margin as needed */
+  }
+
+
+
+  // Hero Section
+.hero-show {
+    position: relative;
+    background-image: url('../assets/Images/hero-shows.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 15rem; 
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 10%;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+  
+    &__title {
+      z-index: 1; 
+      color: $primary3;
+    }
+  
+    @media (min-width: 500px) {
+      min-height: 35rem;
+      background-attachment: fixed;
+    }
+  }
+  
+.intro {
+    &__title {
+      margin: 4% 0 4% 10%;        
+    } 
+  
+    &__image {
+      display: flex;
+      justify-content: center;
+      max-width: 100%;
+      margin: 0 auto;
+      
+      img {
+        width: 90%;
+        height: auto; 
+  
+        @media (min-width: 500px) { 
+          width: 70%; 
+          height: 31.25rem; 
+          max-width: 1280px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
