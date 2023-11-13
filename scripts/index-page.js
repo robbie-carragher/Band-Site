@@ -1,11 +1,5 @@
 
 // function formatDate(date) {
-//     const d = new Date(date);
-//     const day = d.getDate().toString().padStart(2, '0');
-//     const month = (d.getMonth() + 1).toString().padStart(2, '0');
-//     const year = d.getFullYear();
-//     return `${day}/${month}/${year}`;
-// }
 
 // function timeSince(date) {
 //     const now = new Date();
@@ -39,18 +33,11 @@ function formatDate(date) {
 }
 
 
-
-
-
-
-
-
 const comments = [
     {
         name: "Connor Walton",
         comment: "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains.",
         timestamp: new Date().toISOString(),
-        // timestamp: "02/17/202",
         imageUrl: "./assets/Images/placeholder.png"
     },
 
@@ -58,7 +45,6 @@ const comments = [
         name: "Emille Beach",
         comment: "I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day. ",
         timestamp: new Date().toISOString(),
-        // timestamp: "01/09/2021",
         imageUrl: "./assets/Images/placeholder.png"
     },
 
@@ -66,7 +52,6 @@ const comments = [
         name: "Miles Acosta ",
         comment: "I can't stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough. ",
         timestamp: new Date().toISOString(),
-        // timestamp: "12/20/2020",
         imageUrl: "./assets/Images/placeholder.png"
     },
   
@@ -115,23 +100,17 @@ function display(comment) {
         imgEl.src = comment.imageUrl; 
         imgEl.style.width = "45px"; 
         imgEl.style.height = "auto";
-        flexWrapper.appendChild(imgEl); // Append the image to the flex wrapper
+        flexWrapper.appendChild(imgEl);
     }
 
     const nameEl = document.createElement("h3");
     nameEl.classList.add('comment-area__title');
     nameEl.textContent = comment.name;
-    flexWrapper.appendChild(nameEl); // Append the title to the flex wrapper
-
-    // const timeEl = document.createElement("small");
-    // timeEl.classList.add('comment-area__timestamp');
-    // timeEl.textContent = timeSince(comment.timestamp);
-    // flexWrapper.appendChild(timeEl); 
-
+    flexWrapper.appendChild(nameEl); 
 
     const timeEl = document.createElement("small");
     timeEl.classList.add('comment-area__timestamp');
-    timeEl.textContent = formatDate(comment.timestamp); // Use formatDate here
+    timeEl.textContent = formatDate(comment.timestamp); 
     flexWrapper.appendChild(timeEl); 
 
     // Append the flex wrapper to the comment element

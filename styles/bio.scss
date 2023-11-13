@@ -218,6 +218,16 @@
     padding: 4% 0 0 0;
 }
 
+.comment-area__image {
+  width: 45px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.comment-area:last-child {
+  border-bottom: 1px solid #E1E1E1;
+}
+
 .comment-form-title {
   padding: 0 1rem;
 }
@@ -247,14 +257,6 @@
 
 }
 
-.comment-area__image {
-  width: 45px;
-  height: auto;
-  border-radius: 50%;
-}
 
-.comment-area:last-child {
-  border-bottom: 1px solid #E1E1E1;
-}
 
 

@@ -412,29 +412,28 @@ h3 {
 
 /* Styles each LI to be a full row */
 .shows__list li {
-  width: 100%; /* Each list item takes full width of the UL */
-  margin-bottom: 10px; /* Adds some space between rows */
-  /* More styling here */
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .shows__list {
-  list-style: none; /* Removes bullet points from the list */
-  padding: 0; /* Removes default padding */
+  list-style: none;
+  padding: 0;
 }
 
 .show__item {
-  display: flex; /* Establishes flex container */
-  align-items: center; /* Aligns items vertically */
-  justify-content: flex-start; /* Aligns items horizontally */
-  gap: 10px; /* Adds space between items */
-  margin-bottom: 10px; /* Adds space between list items */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
   width: 33%;
 }
 
 .show__details,
 .show__venue,
 .show__location {
-  margin: 0; /* Removes default margin from paragraphs */
+  margin: 0;
   width: 33%;
   display: flex;
 }
@@ -458,10 +457,23 @@ h3 {
   background-image: url("../assets/Images/hero-shows.jpg");
   background-size: cover;
   background-position: center;
-  min-height: 15rem;
+  min-height: 60vw;
   display: flex;
   align-items: center;
-  padding: 0 0 0 10%;
+  padding: 0 0 0 1rem;
+}
+.hero-show__iframe {
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .hero-show {
+    min-height: 48vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-show {
+    padding: 0 0 0 6rem;
+  }
 }
 .hero-show::before {
   content: "";
@@ -477,31 +489,43 @@ h3 {
   z-index: 1;
   color: #FFFFFF;
 }
-@media (min-width: 500px) {
-  .hero-show {
-    min-height: 35rem;
-    background-attachment: fixed;
-  }
-}
 
 .intro__title {
-  margin: 4% 0 4% 10%;
+  margin: 1.5rem 0 1rem 1rem;
+}
+@media screen and (min-width: 768px) {
+  .intro__title {
+    margin: 3.5rem 0 2rem 1rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .intro__title {
+    margin: 3.5rem 0 2rem 6rem;
+  }
 }
 .intro__image {
   display: flex;
   justify-content: center;
-  max-width: 100%;
   margin: 0 auto;
 }
 .intro__image img {
-  width: 90%;
-  height: auto;
+  width: 93%;
+  height: 50vw;
 }
-@media (min-width: 500px) {
+@media screen and (min-width: 768px) {
   .intro__image img {
-    width: 70%;
-    height: 31.25rem;
-    max-width: 1280px;
-    margin: 0 auto;
+    width: 79%;
+    height: 43vw;
   }
+}
+@media screen and (min-width: 1280px) {
+  .intro__image img {
+    width: 71%;
+    height: 40vw;
+  }
+}
+
+.titles-container {
+  display: flex;
+  justify-content: space-around; /* or any other alignment you prefer */
 }/*# sourceMappingURL=shows.css.map */
