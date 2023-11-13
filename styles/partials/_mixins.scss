@@ -1,10 +1,5 @@
 @use 'variables' as *;
 
-@mixin mobile {
-  @media screen and (min-width: $mobile-breakpoint) {
-    @content;
-  }
-}
 
 @mixin tablet {
   @media screen and (min-width: $tablet-breakpoint) {

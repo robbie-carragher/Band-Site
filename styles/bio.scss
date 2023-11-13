@@ -1,139 +1,143 @@
-@use 'partials/variables' as *;
-@use 'partials/grid';
-@use 'partials/global';
-@use 'partials/mixins' as *;
-
+@use "partials/mixins" as *;
+@use "partials/variables" as *;
+@use "partials/grid";
+@use "partials/global";
 
 // Hero Section
 .hero {
-    position: relative;
-    background-image: url('../assets/Images/hero-bio.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 15rem; 
-    display: flex;
-    align-items: center;
-    padding: 0 0 0 10%;
-  
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      z-index: 0;
-    }
-  
-    &__title {
-      z-index: 1; 
-      color: $primary3;
-    }
-  
-    @media (min-width: 500px) {
-      min-height: 35rem;
-      background-attachment: fixed;
-    }
-  }
-  
-.intro {
-    &__title {
-      margin: 4% 0 4% 10%;        
-    } 
-  
-    &__image {
-      display: flex;
-      justify-content: center;
-      max-width: 100%;
-      margin: 0 auto;
-      
-      img {
-        width: 90%;
-        height: auto; 
-  
-        @media (min-width: 500px) { 
-          width: 70%; 
-          height: 31.25rem; 
-          max-width: 1280px;
-          margin: 0 auto;
-        }
-      }
-    }
+  position: relative;
+  background-image: url("../assets/Images/hero-bio.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 60vw;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 1rem;
+
+  @include tablet {
+    min-height: 48vw;
   }
 
-.intro-inner {
-  
-    margin: 2% 1% 0 15%;
-  
-    &__para--bold {
-      font-size: 1.5rem;
-      line-height: 2rem;
-      font-weight: 500;
-      width: 56%;
-    }
-  
-    &__para--margin {
-      font-size: 1rem;  
-    }
-  
-  
-    @media (max-width: 320px) {
-      margin: 6% 1% 0 6%;
-      width: 150%;
-  
-      &__para--bold {
-        font-size: 1rem;
-      }
-    }
-  
-
-    @media (min-width: 500px) {
-      margin: 2% 1% 0 15%;
-    
-  
-      &__para--bold {
-        font-size: 1.5rem;
-        width: 82%;
-      }
-    }
+  @include desktop {
+    padding: 0 0 0 6rem;
   }
 
-.content {
-
-    &__flex {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin: 0 auto; 
-      padding: 0 20px; 
- 
-      width: 71%;
-  
-      @media (max-width: 320px) {
-        width: 100%;
-      }
-
-      @media (min-width: 500px) {
-        width: 71%;
-      }
-    }
-  
-    &__title {
-      margin: 3% 0 1% 14.5%;  
-    }
-  
-    &__para {
-      padding: 0 5% 0 0;    
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
   }
-  
-    
 
-.main__title {
-    margin: 3% 0 1% 14.5%;  
+  &__title {
+    z-index: 1;
+    color: $primary3;
+  }
 }
 
+.intro {
+  &__title {
+    margin: 1.5rem 0 1rem 1rem;
 
+    @include tablet {
+      margin: 3.5rem 0 2rem 1rem;
+    }
 
-        
+    @include desktop {
+      margin: 3.5rem 0 2rem 6rem;
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    img {
+      width: 93%;
+      height: 50vw;
+
+      @include tablet {
+        width: 79%;
+        height: 43vw;
+      }
+
+      @include desktop {
+        width: 71%;
+        height: 40vw;
+      }
+    }
+  }
+}
+
+.intro-inner {
+  margin: 1rem 1rem 1rem 1rem;
+
+  &__para--bold {
+    font-weight: 500;
+  }
+
+  &__para--margin {
+    font-size: 1rem;
+  }
+
+  @include tablet {
+    width: 79%;
+    margin: 2rem auto;
+  }
+
+  @include desktop {
+    width: 79%;
+    margin: 2rem 2rem 2rem 13rem;
+  }
+}
+
+.content {
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    @include tablet {
+      flex-direction: row;
+      width: 87%;
+      margin-left: 5rem;
+    }
+    @include desktop {
+      width: 77%;
+      margin-left: 12rem;
+    }
+  }
+
+  &__title {
+    padding: 1rem 1rem 0 1rem;
+
+    @include tablet {
+      padding: 1rem 1rem 0 6rem;
+    }
+
+    @include desktop {
+      padding: 1rem 1rem 0 13rem;
+    }
+  }
+
+  &__para {
+    @include tablet {
+      padding: 0 3rem 0 0;
+    }
+  }
+}
+
+.main__title {
+  margin: 7% 1rem 0% 1rem;
+
+  @include desktop {
+    margin: 7% 1rem 0% 7rem;
+  }
+}
