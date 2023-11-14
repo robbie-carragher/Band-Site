@@ -61,6 +61,22 @@ const commentFormEl = document.getElementById('commentForm');
 commentFormEl.addEventListener('submit', (e) => {
     e.preventDefault();
 
+
+
+// validation
+
+const name = e.target.name.value.trim();
+const comment = e.target.comment.value.trim();
+
+// Validation
+if (!name || !comment) {
+    alert("Please enter both your name and a comment.");
+    return;
+}
+
+
+
+
     const newComment = {
         name: e.target.name.value,
         comment: e.target.comment.value,   
