@@ -168,6 +168,7 @@
 
     @include desktop {
       padding: 0 6rem 0 24rem;
+      border-bottom: 0;
     }
   }
 
@@ -243,7 +244,7 @@
     color: $primary2;
 
     @include tablet {
-      margin: 1rem -6% -5% 4%;
+      margin: 2rem -6% 1% 4%;
       width: 29%;
     }
 
@@ -265,5 +266,27 @@
     @include tablet {
       flex: 1;
     }
+  }
+}
+
+&__item {
+  position: relative;
+}
+
+&__item::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 50%;
+  height: 1px; 
+  background: $second2; 
+  transform: translateX(-50%);
+
+  @include desktop {  
+    left: 60%;
+    width: 66%;
+    height: 1px;
+    background: $second2; 
   }
 }

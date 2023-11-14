@@ -716,6 +716,6 @@ h3 {
 }
 
 #personName:focus {
-  border: 1px solid black; /* Sets a black border on focus */
-  outline: none; /* Optional: Removes the default focus outline */
+  border: 1px solid #000000;
+  outline: none;
 }/*# sourceMappingURL=bio.css.map */

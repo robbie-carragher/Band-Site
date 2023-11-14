@@ -501,6 +501,7 @@ h3 {
 @media screen and (min-width: 1280px) {
   .shows__item {
     padding: 0 6rem 0 24rem;
+    border-bottom: 0;
   }
 }
 .shows__title {
@@ -578,7 +579,7 @@ h3 {
 }
 @media screen and (min-width: 768px) {
   .shows__list-title {
-    margin: 1rem -6% -5% 4%;
+    margin: 2rem -6% 1% 4%;
     width: 29%;
   }
 }
@@ -597,5 +598,28 @@ h3 {
 @media screen and (min-width: 768px) {
   .shows__item > p, .shows__item > button {
     flex: 1;
+  }
+}
+
+.shows__item {
+  position: relative;
+}
+
+.shows__item::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 50%;
+  height: 1px;
+  background: #E1E1E1;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 1280px) {
+  .shows__item::after {
+    left: 60%;
+    width: 66%;
+    height: 1px;
+    background: #E1E1E1;
   }
 }/*# sourceMappingURL=shows.css.map */

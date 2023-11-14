@@ -161,53 +161,49 @@
 .comment-form {
   padding: 0 1rem;
 
-&__input--wrap {
-  display: flex; 
+  &__input--wrap {
+    display: flex;
 
-  @include tablet {
-       margin: 0 0 0 10%; 
+    @include tablet {
+      margin: 0 0 0 10%;
+    }
+
+    @include desktop {
+      margin: 0 0 0 16%;
+    }
   }
 
-  @include desktop {
-    margin: 0 0 0 16%; 
-}
+  &__flex {
+    margin: 0 0 0 1rem;
 
-}
-
-&__flex {
-  margin: 0 0 0 1rem;
-
-  @include tablet {
-    margin: -3% 0 0 1rem; 
-  }
-}
-
-&__area {
-  margin: 0 0 0 17%; 
-
-  @include desktop {
-    margin: 0 0 0 21%;
+    @include tablet {
+      margin: -3% 0 0 1rem;
+    }
   }
 
-}
+  &__area {
+    margin: 0 0 0 17%;
 
-
-#personName {
-  border: 1px solid $second2;
-  padding: 1rem;
-  border-radius: 4px;
-  width: 19rem;
-  background: $second3;
-
-  @include tablet {
-    width: 37rem;
+    @include desktop {
+      margin: 0 0 0 21%;
+    }
   }
 
-  @include desktop {
-    width: 57rem;
-  }
-}
+  #personName {
+    border: 1px solid $second2;
+    padding: 1rem;
+    border-radius: 4px;
+    width: 19rem;
+    background: $second3;
 
+    @include tablet {
+      width: 37rem;
+    }
+
+    @include desktop {
+      width: 57rem;
+    }
+  }
 
   &__submit {
     border: none;
@@ -215,16 +211,6 @@
     background-color: $primary1;
     border-radius: 3px;
   }
-
-
-  // &__text {
-  //   border: 0.5px solid $primary2;
-  //   background: $second3;
-  //   padding: 4% 0 11% 5%;
-  //   border-radius: 4%;
-  //   width: 76%;
-  //   margin: 0 0 0 22%;
-  // }
 
   &__label {
     color: $primary2;
@@ -234,27 +220,14 @@
   &-title {
     padding: 0 1rem;
 
-  @include tablet {
-    padding: 0 1rem 0 3rem;
+    @include tablet {
+      padding: 0 1rem 0 3rem;
+    }
+
+    @include desktop {
+      padding: 0 1rem 0 9rem;
+    }
   }
-
-  @include desktop {
-    padding: 0 1rem 0 9rem;
-  }
-
-  }
-
-  // @include tablet {
-  // }
-
-  // &-form-title {
-  //   padding: 0 1rem;
-  // }
-
-  // &__name {
-  //   margin: 0 0 3% 0;
-  //   color: #afafaf;
-  // }
 
   &__submit {
     width: 19rem;
@@ -267,7 +240,7 @@
       padding: 1rem;
     }
 
-    @include desktop{
+    @include desktop {
       width: 23%;
       margin: 7% 5% 0 12%;
       padding: 1rem;
@@ -280,18 +253,17 @@
     @include tablet {
       padding: 0 1rem 1% 1rem;
       text-align: right;
-      margin: 0 10% 0 0; 
+      margin: 0 10% 0 0;
     }
   }
 
-&__image {
-  margin: 4% 0 0 0; 
-}
+  &__image {
+    margin: 4% 0 0 0;
+  }
 
-&__label--move {
-  margin: 2% 0 0 0%; 
-}
-
+  &__label--move {
+    margin: 2% 0 0 0%;
+  }
 }
 
 #commentArea {
@@ -302,27 +274,22 @@
   background: $second3;
 
   @include tablet {
-   width: 38rem;
-   padding: 1rem 1rem 3rem 1rem;
+    width: 38rem;
+    padding: 1rem 1rem 3rem 1rem;
   }
 
   @include desktop {
     width: 57rem;
     padding: 1rem 1rem 3rem 1rem;
-   }
-
+  }
 }
-
-
 
 .comment-area {
   padding: 0 0 0 1rem;
 
-
-
-
   &__item {
     list-style-type: none;
+    
     &__image {
       border-radius: 50%;
     }
@@ -362,17 +329,9 @@
   @include desktop {
     padding: 0 15rem 0 15rem;
   }
-
 }
 
-// #personName {
-//   border: 0.5px solid $primary2;
-//   background: $second3;
-//   padding: 11%;
-//   border-radius: 4%;
-//   width: 157%;
-// }
 #personName:focus {
-  border: 1px solid black; /* Sets a black border on focus */
-  outline: none; /* Optional: Removes the default focus outline */
+  border: 1px solid $second1;
+  outline: none;
 }
