@@ -98,8 +98,8 @@ function display(comment) {
         const imgEl = document.createElement('img');
         imgEl.classList.add('comment-area__image');
         imgEl.src = comment.imageUrl; 
-        imgEl.style.width = "45px"; 
-        imgEl.style.height = "auto";
+        imgEl.style.width = ""; 
+        imgEl.style.height = "";
         flexWrapper.appendChild(imgEl);
     }
 

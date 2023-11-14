@@ -37,18 +37,14 @@ const showList = [
 const showListEl = document.querySelector(".shows__list");
 
 
-// Create and insert the 'Shows' title
 const title = document.createElement('h2');
 title.textContent = 'Shows';
 title.classList.add('shows__main-title');
 showListEl.parentElement.insertBefore(title, showListEl);
 
-
-// Create a div for the titles
 const titlesWrap = document.createElement('div');
 titlesWrap.classList.add('shows__title--wrap');
 
-// Create and append the Date, Venue, and Location titles
 const dateListTitle = document.createElement('p');
 dateListTitle.classList.add('shows__list-title');
 dateListTitle.textContent = 'DATE';
@@ -67,7 +63,6 @@ locationListTitle.textContent = 'LOCATION';
 locationListTitle.style.textTransform = 'uppercase';
 titlesWrap.appendChild(locationListTitle);
 
-// Insert the titles wrap under the main title
 showListEl.parentElement.insertBefore(titlesWrap, showListEl);
 
 
@@ -75,7 +70,6 @@ for (let i = 0; i < showList.length; i++) {
   const showItem = document.createElement('li');
   showItem.classList.add('shows__item');
 
-  // Create and append the Date title
   const dateTitle = document.createElement('p');
   dateTitle .classList.add('shows__title');
   dateTitle.textContent = 'DATE';
@@ -87,7 +81,6 @@ for (let i = 0; i < showList.length; i++) {
   showDate.textContent = formatDate(showList[i].date);
   showItem.appendChild(showDate);
 
-  // Create and append the Venue title
   const venueTitle = document.createElement('p');
   venueTitle .classList.add('shows__title');
   venueTitle.textContent = 'VENUE';
@@ -99,7 +92,6 @@ for (let i = 0; i < showList.length; i++) {
   showVenue.textContent = showList[i].venue;
   showItem.appendChild(showVenue);
 
-  // Create and append the Location title
   const locationTitle = document.createElement('p');
   locationTitle.classList.add('shows__title');
   locationTitle.textContent = 'LOCATION';

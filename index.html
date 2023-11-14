@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>BANDSITE</title>
-  <link href="./styles/bio.css" rel="stylesheet" />
+  <link href="./styles/bio.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -81,7 +81,9 @@
       <div class="gallery__item"><img src="./assets/Images/Photo-gallery-7.jpg" alt="img7"  class="grayscale"></div>
       <div class="gallery__item"><img src="./assets/Images/Photo-gallery-8.jpg" alt="img8"  class="grayscale"></div>
       <div class="gallery__item gallery__item--important"><img src="./assets/Images/Photo-gallery-9.jpg" alt="img9"></div>
-     
+    
+      
+  </section>
 </main>
 
 <!-- Form section -->
@@ -95,33 +97,35 @@
   <form id="commentForm" class="comment-form">
      
 
-          <div class="comment-form__image">
-              <!-- <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"> -->
-              <img id="avatar-preview" src="./assets/Images/placeholder.png" alt="Avatar preview" style="display: block;">
-    
+<div class="">
 
-              <div class="comment-form__flex">
-               <div class="comment-form__name"> <label for="personName">NAME: </label></div>
-              <div class="comment-form__name">  <input id="personName" type="text" name="name" placeholder="Enter your name" required></div>
-              </div>
-      </div>
+  <div class="comment-form__input--wrap">
+    <div class="comment-form__image">
+      <!-- <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"> -->
+      <img id="avatar-preview" src="./assets/Images/placeholder.png" alt="Avatar preview" style="display: block;">
+    </div>
+
+    <div class="comment-form__flex">
+    <div class="comment-form__label"><label for="personName">NAME: </label></div>
+    <div class="comment-form__input"><input id="personName" type="text" name="name" placeholder="Enter your name" required></div>
+    </div>
+</div>
+
+<div class="comment-form__area">
+      <div class="comment-form__label comment-form__label--move"> <label for="commentArea">COMMENT:</label></div>        
+    <div class="comment-form__text"><textarea  id="commentArea" name="comment" placeholder="Add a new comment"></textarea></div> 
+</div>
+
+<div class="comment-form--border">
+ <div class="comment-form__submit-btn"> <button type="submit" class="comment-form__submit">COMMENT</button></div>
+</div>
 
 
-      <div class="comment-form__area">
-         <div class="comment-form__label">
-         <div> <label for="commentArea">COMMENT:</label></div>
-         </div>
-          <div class="">
-        <div>      <textarea class="comment-form__text id="commentArea name="comment" placeholder="Add a new comment" ></textarea></div>
-          </div>
-      </div>
-      <!-- <hr> -->
+
+</div>
       <ul id="error-messages">
-
+<!-- This is where the error message will live -->
       </ul>
-      <div class="comment-form--border">
-          <button type="submit" class="comment-form__submit">COMMENT</button>
-      </div>
   </form>
   <ul class="comment-area">
   
@@ -158,7 +162,8 @@
       <section class="footer__list">
           <p class="footer__info footer--move2 footer__info--bold">Carson Whyte<br>ARCH Entertainment</p>
           <p class="footer__info">Booking Agent for 
-            <br>UK / EU / AU </p>     
+            <br>UK / EU / AU </p>
+            <p class="footer2__info-m">      
             <a href="mailto:cwhyte@archentertainment.com" target="blank" rel="noopener" class="footer__email">cwhyte@archentertainment.com</a> 
           </p> 
         </section>
@@ -176,7 +181,7 @@
       <section class="footer2__list-m ">
           <h3 class="footer2__title">Get in Touch</h3>
           <div class="footer2__social-m">
-            <a href="https://www.instagram.com/" class="footer2__social-icon"><img src="./assets/Icons/SVG/Icon-instagram.svg" alt="Instagram" c></a>
+            <a href="https://www.instagram.com/" class="footer2__social-icon"><img src="./assets/Icons/SVG/Icon-instagram.svg" alt="Instagram" ></a>
             <a href="https://www.facebook.com/" class="footer2__social-icon"> <img src="./assets/Icons/SVG/Icon-facebook.svg" alt="Facebook" ></a>
             <a href="https://twitter.com/" class="footer2__social-icon"> <img src="./assets/Icons/SVG/Icon-twitter.svg" alt="Twitter" ></a>
           </div>
@@ -191,7 +196,8 @@
       <section class="footer2__list-m">
         <p class="footer2__info--bold">Pearl Gregg <br>Limitless Artist Group</p>
         <p class="footer2__info--mobile">Booking Agent for 
-          <br>USA / South America / Japan </p>     
+          <br>USA / South America / Japan </p>  
+          <p class="footer2__info-m">   
           <a href="mailto:pearl.gregg@limitlessag.com" target="blank" rel="noopener" class="footer2__email">pearl.gregg@limitlessag.com</a> 
         </p> 
       </section>

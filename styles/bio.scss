@@ -145,58 +145,183 @@
 // Comment Area
 
 #avatar-preview {
-  width: 45px;
-  height: 45px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  background-color:$second2;
+  background-color: $second2;
   display: block;
   margin-bottom: 10px;
+
+  @include tablet {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .comment-form {
   padding: 0 1rem;
 
-  &__image {
-    display:flex;
+&__input--wrap {
+  display: flex; 
+
+  @include tablet {
+       margin: 0 0 0 10%; 
   }
+
+  @include desktop {
+    margin: 0 0 0 16%; 
+}
+
+}
+
+&__flex {
+  margin: 0 0 0 1rem;
+
+  @include tablet {
+    margin: -3% 0 0 1rem; 
+  }
+}
+
+&__area {
+  margin: 0 0 0 17%; 
+
+  @include desktop {
+    margin: 0 0 0 21%;
+  }
+
+}
+
+
+#personName {
+  border: 1px solid $second2;
+  padding: 1rem;
+  border-radius: 4px;
+  width: 19rem;
+  background: $second3;
+
+  @include tablet {
+    width: 37rem;
+  }
+
+  @include desktop {
+    width: 57rem;
+  }
+}
+
+
   &__submit {
     border: none;
     color: $primary3;
-    background-color:$primary1;
+    background-color: $primary1;
     border-radius: 3px;
-  } 
-
-  &__flex {
-    margin-left: 8%; 
   }
 
-  &__text {
-    border: 0.5px solid $primary2;
-    background: $second3;
-    padding: 4% 0 11% 5%;
-    border-radius: 4%;
-    width: 76%;
-    margin: 0 0 0 22%;
-  }
 
-  &__label{
-    margin: 7% 0 2% 23%;
+  // &__text {
+  //   border: 0.5px solid $primary2;
+  //   background: $second3;
+  //   padding: 4% 0 11% 5%;
+  //   border-radius: 4%;
+  //   width: 76%;
+  //   margin: 0 0 0 22%;
+  // }
+
+  &__label {
     color: $primary2;
+    margin: 8% 0 0 0;
   }
 
   &-title {
     padding: 0 1rem;
-  }
 
   @include tablet {
+    padding: 0 1rem 0 3rem;
+  }
+
+  @include desktop {
+    padding: 0 1rem 0 9rem;
+  }
 
   }
+
+  // @include tablet {
+  // }
+
+  // &-form-title {
+  //   padding: 0 1rem;
+  // }
+
+  // &__name {
+  //   margin: 0 0 3% 0;
+  //   color: #afafaf;
+  // }
+
+  &__submit {
+    width: 19rem;
+    margin: 7% 0 0 14%;
+    padding: 1rem;
+
+    @include tablet {
+      width: 26%;
+      margin: 7% 0 0 14%;
+      padding: 1rem;
+    }
+
+    @include desktop{
+      width: 23%;
+      margin: 7% 5% 0 12%;
+      padding: 1rem;
+    }
+  }
+
+  &--border {
+    padding: 0 1rem 7% 1rem;
+
+    @include tablet {
+      padding: 0 1rem 1% 1rem;
+      text-align: right;
+      margin: 0 10% 0 0; 
+    }
+  }
+
+&__image {
+  margin: 4% 0 0 0; 
 }
+
+&__label--move {
+  margin: 2% 0 0 0%; 
+}
+
+}
+
+#commentArea {
+  border: 1px solid $second2;
+  padding: 1rem 1rem 7rem 1rem;
+  width: 19rem;
+  border-radius: 4px;
+  background: $second3;
+
+  @include tablet {
+   width: 38rem;
+   padding: 1rem 1rem 3rem 1rem;
+  }
+
+  @include desktop {
+    width: 57rem;
+    padding: 1rem 1rem 3rem 1rem;
+   }
+
+}
+
+
 
 .comment-area {
   padding: 0 0 0 1rem;
-  
-    &__item {
+
+
+
+
+  &__item {
     list-style-type: none;
     &__image {
       border-radius: 50%;
@@ -206,57 +331,48 @@
   &__description {
     width: 79%;
     margin: 0 0 6% 17%;
-}
-}
+  }
 
-.comment-area__flex-wrapper {
-  display: flex;
-  align-items: center; 
-  gap: 10px; 
-  margin: 0 0 0 0%;
-  border-top: 1px solid $second2;
+  &__flex-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 0 0%;
+    border-top: 1px solid $second2;
     padding: 4% 0 0 0;
-}
+  }
 
-.comment-area__image {
-  width: 45px;
-  height: auto;
-  border-radius: 50%;
-}
+  &__image {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    @include tablet {
+      width: 48px;
+      height: 48px;
+    }
+  }
 
-.comment-area:last-child {
-  border-bottom: 1px solid $second2;
-}
+  &:last-child {
+    border-bottom: 1px solid $second2;
+  }
 
-.comment-form-title {
-  padding: 0 1rem;
-}
-
-#personName {
-  border: 0.5px solid $primary2;
-  background: $second3;
-  padding: 11%;
-  border-radius: 4%;
-  width: 157%;
-}
-
-
-.comment-form__name{
-  margin: 0 0 3% 0;
-  color: #AFAFAF;
-}
-
-.comment-form__submit {
-  width: 85%;
-  margin: 0 0 0 19%;
-  padding: 4% 0 4% 0;
-}
-
-.comment-form--border {
-  padding: 0 1rem 7% 1rem;
+  @include tablet {
+    padding: 0 7rem 0 7rem;
+  }
+  @include desktop {
+    padding: 0 15rem 0 15rem;
+  }
 
 }
 
-
-
-
+// #personName {
+//   border: 0.5px solid $primary2;
+//   background: $second3;
+//   padding: 11%;
+//   border-radius: 4%;
+//   width: 157%;
+// }
+#personName:focus {
+  border: 1px solid black; /* Sets a black border on focus */
+  outline: none; /* Optional: Removes the default focus outline */
+}

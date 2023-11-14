@@ -44,7 +44,7 @@
     color: $primary3;
 
     @include tablet {
-      margin: 0 0 4rem 0; 
+      margin: 0 0 4rem 0;
     }
   }
 
@@ -59,20 +59,19 @@
 
     @include tablet {
       font-weight: 400;
-      font-size: 2.25rem;
+      font-size: 2rem;
     }
   }
 
   &__title--wrap {
     @include tablet {
-      margin: 0 0 0 -2%; 
+      margin: 0 0 0 -2%;
     }
 
     @include desktop {
-      margin: 0 0 0 0; 
+      margin: 0 0 0 0;
     }
   }
-
 
   &__iframe {
     z-index: 1;
@@ -102,8 +101,6 @@
       height: 9.31rem;
       padding: 0 2.25rem;
     }
-
-    
   }
 }
 
