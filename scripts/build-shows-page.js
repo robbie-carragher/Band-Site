@@ -107,7 +107,11 @@ for (let i = 0; i < showList.length; i++) {
   colorButton.textContent = 'BUY TICKETS';
   colorButton.classList.add('shows__btn');
   colorButton.addEventListener('click', function(event) {
-    showItem.style.backgroundColor = '#E1E1E1'; 
+    const allItems = showListEl.getElementsByClassName('shows__item');
+    for (let item of allItems) {
+      item.style.backgroundColor = ''; 
+    }
+    showItem.style.backgroundColor = '#E1E1E1';
   });
   showItem.appendChild(colorButton);
 

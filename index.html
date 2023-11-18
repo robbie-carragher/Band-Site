@@ -97,32 +97,52 @@
   <form id="commentForm" class="comment-form">
      
 
-<div class="">
+<div class="comment-form__wrap">
 
-  <div class="comment-form__input--wrap">
+  <!-- <div class="comment-form__input--wrap">
     <div class="comment-form__image">
-      <!-- <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"> -->
-      <img id="avatar-preview" src="./assets/Images/placeholder.png" alt="Avatar preview" style="display: block;">
+ 
+      <img id="avatar-preview" src="./assets/Images/placeholder.png" alt="Avatar preview">
     </div>
 
-    <div class="comment-form__flex">
+  </div> -->
+
+
+  <!-- <div class="comment-form__image"> -->
+ 
+    <img id="avatar-preview" src="./assets/Images/placeholder.png" alt="Avatar preview">
+  <!-- </div> -->
+
+    <div class="">
+
     <div class="comment-form__label"><label for="personName">NAME: </label></div>
     <div class="comment-form__input"><input id="personName" type="text" name="name" placeholder="Enter your name" required></div>
+    <div class="comment-form__label comment-form__label--move"> <label for="commentArea">COMMENT:</label></div>        
+    <div class="comment-form__text"><textarea  id="commentArea" name="comment" placeholder="Add a new comment"></textarea></div>
     </div>
-</div>
 
+
+
+    
+
+<!-- 
 <div class="comment-form__area">
       <div class="comment-form__label comment-form__label--move"> <label for="commentArea">COMMENT:</label></div>        
     <div class="comment-form__text"><textarea  id="commentArea" name="comment" placeholder="Add a new comment"></textarea></div> 
+</div> -->
+
+<!-- <div class="comment-form--border">
+ <div class="comment-form__submit-btn"> <button type="submit" class="comment-form__submit">COMMENT</button></div>
+</div> -->
+
 </div>
 
 <div class="comment-form--border">
- <div class="comment-form__submit-btn"> <button type="submit" class="comment-form__submit">COMMENT</button></div>
-</div>
+  <div class="comment-form__submit-btn"> <button type="submit" class="comment-form__submit">COMMENT</button></div>
+ </div>
 
 
-
-</div>
+ 
       <ul id="error-messages">
 <!-- This is where the error message will live -->
       </ul>
@@ -221,8 +241,11 @@
 <section class="copyright">
   <p class="copyright__list">Copyright The Bees Knees © 2021 All Rights Reserved</p>
 </section>
-
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./scripts/band-site-api.js"></script>
+<!-- <script src="./scripts/index-page.js" type="module"></script> -->
 <script src="./scripts/index-page.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
 
 </body>
 </html>
