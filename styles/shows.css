@@ -570,4 +570,8 @@ h3 {
 
 .shows__main-title {
   padding: 0 1rem;
+}
+
+.shows__item--highlighted {
+  background-color: #E1E1E1; /* Light gray color */
 }/*# sourceMappingURL=shows.css.map */

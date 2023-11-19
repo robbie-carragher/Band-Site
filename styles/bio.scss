@@ -333,11 +333,10 @@
   }
 }
 
-#personName:focus {
-  border: 1px solid $second1;
+#personName:focus, #commentArea:focus {
+  border: 1px solid #000; /* Sets the border color to black when the input field is focused */
   outline: none;
 }
-
 
 
 
@@ -358,8 +357,11 @@
   display: inline-block;
 }
 
-// .comment-area__title {
+.input-error {
+  border: 1px solid red;
+}
 
-//   position: absolute;
-// }
-
+#error-messages {
+  text-align: center;
+  list-style: none;
+}

@@ -23,14 +23,14 @@ class BandSiteApi {
     }
 
     async getShows() {
+      console.log("getting shows")
       const response = await axios.get(
-        "https://project-1-api.herokuapp.com/comments?api_key=e3c51b65-ac15-4f73-8918-5b420bcb4b1"
+        "https://project-1-api.herokuapp.com/showdates?api_key=e3c51b65-ac15-4f73-8918-5b420bcb4b1"
       );
+      
       console.log("response", response.data);
       return response.data;
     }
-
-
 
   }
 
