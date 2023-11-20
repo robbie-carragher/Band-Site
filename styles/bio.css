@@ -173,7 +173,7 @@ h3 {
 }
 @media screen and (min-width: 768px) {
   .wrapper {
-    padding: 0 0 0 2.25rem;
+    padding: 0 2.25rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -244,9 +244,16 @@ h3 {
   text-align: center;
   padding: 0.8125rem 0;
 }
+.nav__link :hover {
+  color: #FFFFFF;
+  border-bottom: 0.2rem solid #FFFFFF;
+  padding: 0 0 41% 0;
+  margin: 46% 0 0 0;
+}
 .nav__link--active {
   border-bottom: 0.2rem solid #FFFFFF;
   color: #FFFFFF;
+  font-weight: 700;
 }
 @media screen and (min-width: 768px) {
   .nav__link--active {
@@ -434,7 +441,8 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #323232;
+  opacity: 50%;
   z-index: 0;
 }
 .hero__title {
@@ -611,11 +619,16 @@ h3 {
   border: none;
   color: #FFFFFF;
   background-color: #323232;
-  border-radius: 3px;
+  border-radius: 4px;
   width: 100%;
   box-sizing: border-box;
-  margin-bottom: 10px;
-  padding: 10px 0;
+  margin-bottom: 0.66rem;
+  height: 2.8rem;
+  padding: 0 2.25rem;
+}
+.comment-form__submit-btn:hover {
+  background-color: #000;
+  color: white; /* Changes the text color to white on hover */
 }
 @media screen and (min-width: 768px) {
   .comment-form__submit-btn {

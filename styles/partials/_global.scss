@@ -73,7 +73,7 @@ h3 {
   padding: 5% 0 0 0;
 
   @include tablet {
-    padding: 0 0 0 2.25rem;
+    padding:  0 2.25rem;
   }
 
   @include desktop {
@@ -144,9 +144,17 @@ h3 {
     text-align: center;
     padding: 0.8125rem 0;
 
+    :hover {
+      color: #FFFFFF;
+      border-bottom: 0.2rem solid #FFFFFF; 
+      padding: 0 0 41% 0;
+      margin: 46% 0 0 0;
+  }
+
     &--active {
       border-bottom: 0.2rem solid $primary3;
       color: $primary3;
+      font-weight: 700;
 
       @include tablet {
         padding: 0 0 41% 0;
