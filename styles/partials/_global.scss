@@ -71,7 +71,6 @@ h3 {
 .wrapper {
   margin: 0 auto;
   padding: 5% 0 0 0;
-  
 
   @include tablet {
     padding: 0 0 0 2.25rem;
@@ -80,7 +79,6 @@ h3 {
   @include desktop {
     padding: 0 0 0 8rem;
   }
-
 }
 
 .nav {
@@ -109,11 +107,10 @@ h3 {
   }
 
   &__item--margin {
-
     @include tablet {
-      margin: 0 0 0 4%;  
+      margin: 0 0 0 4%;
+    }
   }
-}
 
   &__list {
     color: #ffffff;
@@ -122,15 +119,16 @@ h3 {
     align-items: center;
     font-weight: 300;
     margin: 1% 0 0 0;
-    width: 125%;
+    width: 100%;
+    padding: 0;
 
     @include tablet {
       max-width: 100%;
-      display: flex; 
-      flex-direction: row; 
+      display: flex;
+      flex-direction: row;
       align-items: center;
       justify-content: flex-start;
-      margin: 0 0% 0 1%;
+      margin: 0 0% 0 6%;
     }
   }
 
@@ -150,7 +148,6 @@ h3 {
         padding: 0 0 41% 0;
         margin: 46% 0 0 0;
       }
-
     }
 
     &--move {
@@ -164,11 +161,10 @@ h3 {
   }
 }
 
-
 // Footer Desktop/Tablet View
 
 .footer {
-display: none;
+  display: none;
 
   @include tablet {
     display: flex;
@@ -187,7 +183,7 @@ display: none;
   }
 
   &__title {
-    @include tablet{
+    @include tablet {
       padding: 0;
       font-size: 2.25rem;
     }
@@ -216,7 +212,6 @@ display: none;
     @include desktop {
       margin: -4% 0 0 0;
     }
-
   }
 
   &--move1 {
@@ -241,7 +236,6 @@ display: none;
   &__logo {
     margin: 0 0 0 -42%;
   }
-
 }
 
 // Mobile footer Styles
@@ -272,8 +266,8 @@ display: none;
   }
 
   &__info--move {
-       margin: 0 0 0 0;
-}
+    margin: 0 0 0 0;
+  }
 
   &__info--mobile {
     font-weight: 400;
@@ -282,7 +276,6 @@ display: none;
   &__social-icon {
     padding: 0 2% 0 10%;
     margin: 0 4% 6% -9%;
-
   }
 
   &__email {
@@ -294,9 +287,8 @@ display: none;
 
   &__logo {
     margin: 12% 0 0 0;
-    display: inline-block; 
+    display: inline-block;
   }
-
 }
 
 // Copyright Section
@@ -309,13 +301,11 @@ display: none;
   padding: 1rem 1rem 2rem 1rem;
 
   @include tablet {
-      padding: 1rem 1rem 2rem 2.25rem;  
+    padding: 1rem 1rem 2rem 2.25rem;
   }
 
   @include desktop {
     padding: 0 1rem 2rem 8rem;
     margin-top: -3%;
+  }
 }
-}
-
-
