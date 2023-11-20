@@ -95,7 +95,11 @@ h3 {
   &__site-title {
     color: $primary3;
     text-decoration: none;
-    font-size: 1.5rem;
+    
+
+    @include tablet{
+      margin-top: 0.438rem;
+    }
   }
 
   &__item {

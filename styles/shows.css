@@ -141,7 +141,11 @@ h3 {
 .nav__site-title {
   color: #FFFFFF;
   text-decoration: none;
-  font-size: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .nav__site-title {
+    margin-top: 0.438rem;
+  }
 }
 .nav__item {
   width: 100%;

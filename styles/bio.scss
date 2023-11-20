@@ -12,10 +12,11 @@
   min-height: 60vw;
   display: flex;
   align-items: center;
-  padding: 0 0 0 1rem;
+  padding: 0 1rem 0 1rem;
 
   @include tablet {
     min-height: 48vw;
+    padding: 0 2.25rem 0 2.25rem;
   }
 
   @include desktop {
@@ -45,6 +46,8 @@
 
     @include tablet {
       margin: 3.5rem 0 2rem 1rem;
+      padding: 0 2.25rem 0 2.25rem;
+      
     }
 
     @include desktop {
@@ -137,6 +140,10 @@
 .main__title {
   margin: 7% 1rem 0% 1rem;
 
+  @include tablet {
+    padding: 0 2.25rem 1rem 2.25rem;
+  }
+
   @include desktop {
     margin: 7% 1rem 0% 7rem;
   }
@@ -145,7 +152,12 @@
 // Comment Form Input Area
 
 .comment-form {
-  padding: 0 4% 0 4%;
+  padding: 0 1rem 0 1rem;
+
+  @include tablet {
+    width: 87%;
+    margin: 0 auto;
+  }
 
   &__wrap {
     display: flex;
@@ -163,6 +175,11 @@
     width: 36px; 
     height: 36px;
     border-radius: 50%;
+
+    @include tablet {
+      width: 48px; 
+      height: 48px;   
+    }
   }
 
     &__personName {
@@ -197,6 +214,10 @@
     box-sizing: border-box; 
     margin-bottom: 10px; 
     padding: 10px 0; 
+
+    @include tablet {
+      width: 28%; 
+    }
   }
 
     &__label {
@@ -217,7 +238,7 @@
     padding: 0 1rem;
 
     @include tablet {
-      // padding: 0 1rem 0 3rem;
+      padding: 0 2.25rem 0 2.25rem;
     }
 
     @include desktop {
@@ -233,6 +254,11 @@
   textarea::-webkit-input-placeholder { 
     color: #000;
     font-size: 0.81rem;
+  }
+
+  &-submit-wrap{
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -257,7 +283,12 @@
 }
 
 .comment-area {
-  padding: 0 1rem 0 1rem;
+  padding: 0 1rem .5rem 1rem;
+
+  @include tablet {
+    margin: 0 auto 1rem auto;
+    width: 87%;
+  }
 
   &__item {
     list-style-type: none;
@@ -273,6 +304,11 @@
     height: 36px;
     width: 36px;
     border-radius: 50%;
+
+    @include tablet {
+      height: 48px;
+      width: 48px;
+    }
   }
 
   &__description {
@@ -282,12 +318,17 @@
 
   &__flex-wrapper {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     gap: 10px;
     margin: 0 0 0 0%;
     border-top: 1px solid $second2;
     padding: 4% 0 0 0;
     width:100%;
+  }
+
+  &__title { 
+    flex-grow: 1; 
   }
 
 }
@@ -302,8 +343,6 @@
   text-align: center;
   list-style: none;
 }
-
-
 
 
 

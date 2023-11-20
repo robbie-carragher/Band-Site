@@ -29,7 +29,7 @@
 
   &__item {
     text-align: center;
-    padding: 2% 0;
+    padding: 1% 0;
     font-size: 5rem;
     border-radius: 5px;
     margin: 0 auto; 
@@ -38,6 +38,7 @@
 
         @include tablet {
           width: calc(90% / 3);
+          padding: 1.5% 0;
         }
 
         &--important {
