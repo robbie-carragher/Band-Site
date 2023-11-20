@@ -4,17 +4,18 @@
   display: flex;
   flex-direction: column;
   padding: 0 1rem 0 1rem;
+  background: #FAFAFA;
 
     @include tablet {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-evenly;
       align-content: space-evenly;
-      padding: 0 2.25rem 0 2.25rem;
+      padding: 0 2.25rem 1rem 2.25rem;
     }
 
     @include desktop {
-      padding: 0 7rem 5% 7rem;
+      padding: 0 7rem 0.63rem 7rem;
     }
 
     img {
@@ -29,7 +30,7 @@
 
   &__item {
     text-align: center;
-    padding: 1% 0;
+    padding: 2% 0;
     font-size: 5rem;
     border-radius: 5px;
     margin: 0 auto; 
@@ -50,9 +51,15 @@
     
     @include desktop {
       width: calc(90% / 3);
-      margin: -1% 0;
+      margin: -0.313rem 0 0 0;
     }
   }
 }
 
+.gallery-wrap-title {
+  background: #FAFAFA;
+  padding: 2rem 0 1rem 0;
+  margin-top: 2rem;
 
+
+}

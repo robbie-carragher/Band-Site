@@ -20,7 +20,7 @@
   }
 
   @include desktop {
-    padding: 0 0 0 6rem;
+    padding: 0 5rem 0 5rem;
   }
 
   &::before {
@@ -51,7 +51,7 @@
     }
 
     @include desktop {
-      margin: 3.5rem 0 2rem 6rem;
+      padding: 0 4rem 1rem 4rem;
     }
   }
 
@@ -138,14 +138,14 @@
 }
 
 .main__title {
-  margin: 7% 1rem 0% 1rem;
+  margin: 4% 1rem 0% 1rem;
 
   @include tablet {
     padding: 0 2.25rem 1rem 2.25rem;
   }
 
   @include desktop {
-    margin: 7% 1rem 0% 7rem;
+    margin: 2% 1rem 0% 7rem;
   }
 }
 
@@ -157,6 +157,10 @@
   @include tablet {
     width: 87%;
     margin: 0 auto;
+  }
+
+  @include desktop {
+    width: 50%;
   }
 
   &__wrap {
@@ -242,7 +246,7 @@
     }
 
     @include desktop {
-      // padding: 0 1rem 0 9rem;
+      padding: 1rem 5rem 0 9rem;
     }
   }
 
@@ -290,6 +294,10 @@
     width: 87%;
   }
 
+  @include desktop {
+    width: 50%;
+  }
+
   &__item {
     list-style-type: none;
 
@@ -314,6 +322,10 @@
   &__description {
     width: 79%;
     margin: 0 0 3% 3.5rem;
+
+    @include tablet {
+      margin: -1rem 0 3% 4.2rem; 
+    }
   }
 
   &__flex-wrapper {
