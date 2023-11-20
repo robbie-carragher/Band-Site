@@ -51,7 +51,7 @@ function display(comment) {
   const commentsEl = document.querySelector(".comment-area");
   const commentEl = createElement("li", ["comment-area__item"]);
   const flexWrapper = createElement("div", ["comment-area__flex-wrapper"]);
-  const avatarImageEl = createElement("div", ["avatar-image"]);
+  const avatarImageEl = createElement("div", ["comment-area__avatar-image"]);
   const nameEl = createElement("h3", ["comment-area__title"], comment.name);
 
   const timeEl = createElement(
