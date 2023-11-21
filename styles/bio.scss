@@ -30,8 +30,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    // background-color: rgba(0, 0, 0, 0.5);
-    background-color: #323232;
+    background-color:$primary1;
     opacity: 50%;
     z-index: 0;
   }
@@ -178,9 +177,11 @@
   }
 
   &__avatar-preview{
+
     width: 36px; 
     height: 36px;
     border-radius: 50%;
+    object-fit: cover;
 
     @include tablet {
       width: 48px; 
@@ -203,7 +204,7 @@
   }
 
   #personName:focus, #commentArea:focus {
-    border: 1px solid #000; 
+    border: 1px solid $second1; 
     outline: none;
   }
 
@@ -224,8 +225,8 @@
 
 
     &:hover {
-      background-color: #000;
-      color: white; /* Changes the text color to white on hover */
+      background-color: $second1;
+      color:$primary3; /* Changes the text color to white on hover */
   }
 
     @include tablet {
@@ -260,12 +261,12 @@
   }
 
   input::-webkit-input-placeholder { 
-    color: #000;
+    color:$second1;
     font-size: 0.81rem;
   }
 
   textarea::-webkit-input-placeholder { 
-    color: #000;
+    color: $second1;
     font-size: 0.81rem;
   }
 
@@ -316,7 +317,7 @@
   }
 
   &__avatar-image{
-    background: #E1E1E1;
+    background: $second2;
     max-width: 100%;
     height: 36px;
     width: 36px;
@@ -365,6 +366,13 @@
   list-style: none;
 }
 
+.error {
+  border: 1px solid red; /* Style as needed for the error state */
+}
+
+.comment-form__commentArea.error {
+  border: 1px solid red;
+}
 
 
 

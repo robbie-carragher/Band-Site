@@ -146,8 +146,11 @@ h3 {
     &:hover {
       color: $primary3;
       border-bottom: 0.2rem solid $primary3;
-      padding: 0 0 41% 0;
-      margin: 46% 0 0 0;
+
+      @include tablet {
+        padding: 0 0 41% 0;
+        margin: 46% 0 0 0;
+      }
     }
 
     &--active {
@@ -163,11 +166,6 @@ h3 {
 
     &--move {
       padding: 0 16% 0 0;
-    }
-
-    &:hover {
-      color: rgba(255, 255, 255, 0.7);
-      opacity: 0.7;
     }
   }
 }

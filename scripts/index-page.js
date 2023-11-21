@@ -1,12 +1,10 @@
 // create instance of BandApi class
 const bandSiteApi = new BandSiteApi();
-console.log(bandSiteApi);
 
 async function fetchComments() {
   const commentsEl = document.querySelector(".comment-area");
 
   const comments = await bandSiteApi.getComments();
-  console.log("comments", comments);
 
   // Initial display of comments
   for (const comment of comments) {
@@ -66,7 +64,6 @@ function display(comment) {
     comment.comment
   );
 
-  // Append the avatar image container to the flex wrapper or the desired parent element
   flexWrapper.appendChild(avatarImageEl);
   flexWrapper.appendChild(nameEl);
   flexWrapper.appendChild(timeEl);
@@ -77,9 +74,8 @@ function display(comment) {
 }
 
 const commentFormEl = document.getElementById("commentForm");
-
-
-const commentInput = document.getElementById('commentArea');
+const commentInput = document.getElementById("commentArea");
+const errorsListEl = document.getElementById("error-messages");
 
 commentFormEl.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -100,7 +96,7 @@ commentFormEl.addEventListener("submit", async (e) => {
 
       errorsListEl.appendChild(errorEl);
     }
- 
+
     return; // immediately ends the function!
   }
 

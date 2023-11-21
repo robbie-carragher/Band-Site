@@ -247,8 +247,12 @@ h3 {
 .nav__link:hover {
   color: #FFFFFF;
   border-bottom: 0.2rem solid #FFFFFF;
-  padding: 0 0 41% 0;
-  margin: 46% 0 0 0;
+}
+@media screen and (min-width: 768px) {
+  .nav__link:hover {
+    padding: 0 0 41% 0;
+    margin: 46% 0 0 0;
+  }
 }
 .nav__link--active {
   border-bottom: 0.2rem solid #FFFFFF;
@@ -263,10 +267,6 @@ h3 {
 }
 .nav__link--move {
   padding: 0 16% 0 0;
-}
-.nav__link:hover {
-  color: rgba(255, 255, 255, 0.7);
-  opacity: 0.7;
 }
 
 .footer {
@@ -589,6 +589,8 @@ h3 {
   width: 36px;
   height: 36px;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (min-width: 768px) {
   .comment-form__avatar-preview {
@@ -609,7 +611,7 @@ h3 {
   margin-bottom: 10px;
 }
 .comment-form #personName:focus, .comment-form #commentArea:focus {
-  border: 1px solid #000;
+  border: 1px solid #000000;
   outline: none;
 }
 .comment-form__avatar-wrap {
@@ -627,8 +629,8 @@ h3 {
   padding: 0 2.25rem;
 }
 .comment-form__submit-btn:hover {
-  background-color: #000;
-  color: white; /* Changes the text color to white on hover */
+  background-color: #000000;
+  color: #FFFFFF; /* Changes the text color to white on hover */
 }
 @media screen and (min-width: 768px) {
   .comment-form__submit-btn {
@@ -660,11 +662,11 @@ h3 {
   }
 }
 .comment-form input::-webkit-input-placeholder {
-  color: #000;
+  color: #000000;
   font-size: 0.81rem;
 }
 .comment-form textarea::-webkit-input-placeholder {
-  color: #000;
+  color: #000000;
   font-size: 0.81rem;
 }
 .comment-form-submit-wrap {
@@ -755,4 +757,12 @@ h3 {
 #error-messages {
   text-align: center;
   list-style: none;
+}
+
+.error {
+  border: 1px solid red; /* Style as needed for the error state */
+}
+
+.comment-form__commentArea.error {
+  border: 1px solid red;
 }/*# sourceMappingURL=bio.css.map */
