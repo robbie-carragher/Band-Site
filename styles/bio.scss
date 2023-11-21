@@ -226,7 +226,7 @@
 
     &:hover {
       background-color: $second1;
-      color:$primary3; /* Changes the text color to white on hover */
+      color:$primary3;
   }
 
     @include tablet {
@@ -353,26 +353,19 @@
     flex-grow: 1; 
   }
 
+  &__like-button {
+    background: #323232;
+    color: #fff;
+    border-radius: 4px;
+    margin: 0 0.5rem 0.5rem 0;
+    border: none;
+    padding: 0.3rem 0.5rem;
 }
 
-// Error Checking
 
-.input-error {
-  border: 1px solid red;
 }
 
-#error-messages {
-  text-align: center;
-  list-style: none;
-}
 
-.error {
-  border: 1px solid red; /* Style as needed for the error state */
-}
-
-.comment-form__commentArea.error {
-  border: 1px solid red;
-}
 
 
 

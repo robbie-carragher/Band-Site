@@ -29,7 +29,7 @@ function display(comment) {
   const nameEl = createElement("h3", ["comment-area__title"], comment.name);
   const timeEl = createElement("small", ["comment-area__timestamp"], timeSince(comment.timestamp));
   const comEl = createElement("p", ["comment-area__description"], comment.comment);
-  const likeButton = createElement('button', ['like-button'], 'Like');
+  const likeButton = createElement('button', ['comment-area__like-button'], 'Like');
   const likesCount = createElement('span', ['likes-count'], `Likes: ${comment.likes || 0}`);
 
   likeButton.addEventListener('click', async () => {
