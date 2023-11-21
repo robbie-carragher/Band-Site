@@ -26,4 +26,11 @@ class BandSiteApi {
   getComments() {
     return this.getRequest("comments");
   }
+
+  async getShows() {
+    const url = `https://project-1-api.herokuapp.com/showdates?api_key=${this.apiKey}`;
+    const response = await axios.get(url);
+    return response.data;
+  }
+
 }
