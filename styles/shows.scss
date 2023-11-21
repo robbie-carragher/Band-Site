@@ -36,8 +36,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    // background-color: rgba(0, 0, 0, 0.5);
-    background-color: #323232;
+    background-color: $primary1;
     opacity: 50%;
     z-index: 0;
   }
@@ -54,9 +53,8 @@
   &__title--wrap,
   &__subtitle {
     z-index: 1;
-    color: #fff;
+    color: $primary3;
     z-index: 1;
-    color: #fff;
     font-weight: 300;
     font-size: 1rem;
 
@@ -68,7 +66,6 @@
 
   &__title--wrap {
     @include tablet {
-      // margin: 0 0 0 -2%;
     }
 
     @include desktop {
@@ -153,7 +150,6 @@
   }
   &__item {
     padding: 0.325rem;
-    // border-bottom: 1px solid $second2;
     display: block;
     align-items: center;
     justify-content: flex-start;
@@ -163,7 +159,7 @@
     padding: 0.5rem 1.125rem;
 
     &__item:hover {
-      background-color: #fafafa;
+      background-color: $second3;
     }
 
     @include tablet {
@@ -174,10 +170,6 @@
       
     }
 
-    @include desktop {
-      // padding: 0 6rem 0 24rem;
-      // border-bottom: 0;
-    }
   }
 
   &__title {
@@ -193,34 +185,22 @@
 
   &__details {
     font-weight: 600;
-    @include tablet {
-      // padding: 0 8% 0 0%;
-    }
+
   }
 
   &__main-title {
     padding: 1rem 1rem 0 1rem;
 
-    @include tablet {
-      // padding: 1rem 2.25rem 0 2.25rem;
-    }
-
-    @include desktop {
-      // padding: 1rem 8rem 0 8rem;
-    }
   }
 
   &__list li {
     width: 100%;
-    border-bottom: 1px solid #E1E1E1;
+    border-bottom: 1px solid $second3;
   }
 
   &__list {
     padding: 0 1rem 0 1rem;
 
-    @include tablet {
-      // padding: 1rem 2.25rem 0 2.25rem;
-    }
   }
 
   &__btn {
@@ -233,14 +213,14 @@
     border-radius: 4px;
 
     &:hover {
-      background-color: #000;
-      color: white; /* Changes the text color to white on hover */
+      background-color:$second1;
+      color: $primary3; 
   }
   
 
     @include tablet {
       width: 26%;
-      padding: 2% 0 2% 0;
+      // padding: 2% 0 2% 0;
       margin-left: auto;
       margin-top: 2%;
     }
@@ -254,6 +234,11 @@
       text-align: left;
       width: 88%;
     }
+
+    @include desktop {
+      width: 66%;
+      margin: 2% 12rem 0 -3rem;
+    }
   }
 
   &__list-title {
@@ -261,21 +246,12 @@
     color: $primary2;
 
     @include tablet {
-      // margin: 2rem -6% 1% 4%;
       width: 29%;
     }
 
-    @include desktop {
-      // margin: 1rem -30% 0 29%;
-      width: 19%;
-      // padding: 0 2rem 0 0rem;
-    }
-  }
-
-  &__venue {
-    @include tablet {
-      // padding: 0 10% 0 0;
-    }
+    // @include desktop {
+    //   width: 19%;
+    // }
   }
 
   &__item > p,
@@ -286,7 +262,7 @@
   }
 
   &__item:hover {
-    background-color: #fafafa;
+    background-color: $second3;
   }
 
 &__titles-container {
@@ -295,27 +271,29 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 2rem 0 8rem;
   }
 } 
 
 .shows__item--highlighted {
-  background-color: #E1E1E1; /* Light gray color */
+  background-color: $second2; 
 }
 
 .shows__item {
-  @include desktop {
-    width: 60%;
-    margin: 0 auto;
-  }
+  border-radius: 4px;
 
 }
 
-.shows__titles-container {
- @include desktop {
-  padding: 0 2rem 0 8rem;
- }
-}
 
+
+&__list {
+
+@include desktop {
+  width: 67%;
+  margin-left: auto;
+  margin-right: 6rem;
+}
+}
 
 }
 

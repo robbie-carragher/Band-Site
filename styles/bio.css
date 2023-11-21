@@ -217,7 +217,7 @@ h3 {
   }
 }
 .nav__list {
-  color: #ffffff;
+  color: #FFFFFF;
   display: flex;
   list-style-type: none;
   align-items: center;
@@ -244,7 +244,7 @@ h3 {
   text-align: center;
   padding: 0.8125rem 0;
 }
-.nav__link :hover {
+.nav__link:hover {
   color: #FFFFFF;
   border-bottom: 0.2rem solid #FFFFFF;
   padding: 0 0 41% 0;
@@ -282,7 +282,7 @@ h3 {
     padding: 6% 2.25rem 6% 2.25rem;
     margin: 0;
     background-color: #323232;
-    color: #fff;
+    color: #FFFFFF;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -336,7 +336,7 @@ h3 {
   }
 }
 .footer__email {
-  color: #fff;
+  color: #FFFFFF;
   text-decoration: none;
 }
 .footer__social-icon {
@@ -356,7 +356,7 @@ h3 {
   padding: 0;
   margin: 0;
   background-color: #323232;
-  color: #fff;
+  color: #FFFFFF;
   padding: 0 1rem;
 }
 @media screen and (min-width: 768px) {
@@ -386,7 +386,7 @@ h3 {
 .footer2__email {
   display: inline-block;
   margin: 5% 0 5% 0;
-  color: #fff;
+  color: #FFFFFF;
   text-decoration: none;
 }
 .footer2__logo {
@@ -396,7 +396,7 @@ h3 {
 
 .copyright {
   background-color: #323232;
-  color: #fff;
+  color: #FFFFFF;
   margin: 0 0 0 0;
   margin: -2% 0 0 0;
   padding: 1rem 1rem 2rem 1rem;

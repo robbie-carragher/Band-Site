@@ -1,60 +1,42 @@
+// function formatDate(dateString) {
+//   const options = {
+//     weekday: "short",
+//     year: "numeric",
+//     month: "short",
+//     day: "numeric",
+//   };
+//   const date = new Date(dateString);
+//   return date.toLocaleDateString("en-US", options);
+// }
+
+
+
 function formatDate(dateString) {
-  const options = {
-    weekday: "short",
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  };
   const date = new Date(dateString);
-  return date.toLocaleDateString("en-US", options);
+  const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+  const parts = date.toLocaleDateString('en-US', options).split(', ');
+  return parts.join(' ');
 }
+
+
+
 
 const showListEl = document.querySelector(".shows__list");
 const bandSiteApi = new BandSiteApi("e3c51b65-ac15-4f73-8918-5b420bcb4b1");
 
-// const title = document.createElement("h2");
-// title.textContent = "Shows";
-// title.classList.add("shows__main-title");
-// showListEl.parentElement.insertBefore(title, showListEl);
 
-// const titlesWrap = document.createElement("div");
-// titlesWrap.classList.add("shows__title--wrap");
-
-// const dateListTitle = document.createElement("p");
-// dateListTitle.classList.add("shows__list-title");
-// dateListTitle.textContent = "DATE";
-// dateListTitle.style.textTransform = "uppercase";
-// titlesWrap.appendChild(dateListTitle);
-
-// const venueListTitle = document.createElement("p");
-// venueListTitle.classList.add("shows__list-title");
-// venueListTitle.textContent = "VENUE";
-// venueListTitle.style.textTransform = "uppercase";
-// titlesWrap.appendChild(venueListTitle);
-
-// const locationListTitle = document.createElement("p");
-// locationListTitle.classList.add("shows__list-title");
-// locationListTitle.textContent = "LOCATION";
-// locationListTitle.style.textTransform = "uppercase";
-// titlesWrap.appendChild(locationListTitle);
-
-// showListEl.parentElement.insertBefore(titlesWrap, showListEl);
-
-// Create a wrapper container for the entire shows section
 const showsContainer = document.createElement("div");
 showsContainer.classList.add("shows__titles-container");
 
-// Create and add the h2 title
+
 const title = document.createElement("h2");
 title.textContent = "Shows";
 title.classList.add("shows__main-title");
-showsContainer.appendChild(title); // Add title to the container
+showsContainer.appendChild(title); 
 
-// Create the titlesWrap container
 const titlesWrap = document.createElement("div");
 titlesWrap.classList.add("shows__title--wrap");
 
-// Function to create and append a title
 function createAndAppendTitle(parent, textContent) {
     const titleElement = document.createElement("p");
     titleElement.classList.add("shows__list-title");
@@ -63,15 +45,12 @@ function createAndAppendTitle(parent, textContent) {
     parent.appendChild(titleElement);
 }
 
-// Adding titles to the titlesWrap container
+
 createAndAppendTitle(titlesWrap, "DATE");
 createAndAppendTitle(titlesWrap, "VENUE");
 createAndAppendTitle(titlesWrap, "LOCATION");
 
-// Append titlesWrap to the showsContainer
 showsContainer.appendChild(titlesWrap);
-
-// Insert the showsContainer into the DOM before the showListEl
 showListEl.parentElement.insertBefore(showsContainer, showListEl);
 
 
